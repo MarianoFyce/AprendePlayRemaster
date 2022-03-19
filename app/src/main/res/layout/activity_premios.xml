@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoj"
+    tools:context=".Premios">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="304dp"
+        android:layout_height="252dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/caballo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+
+    <LinearLayout
+        android:layout_width="465dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginRight="-11dp"
+        android:background="#807C85C6"
+        android:orientation="horizontal">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageVi"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/conejo"
+            app:layout_constraintVertical_bias="0.383" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bangers"
+                android:text="Nivel 5"
+                android:textColor="@color/indigo"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bangers"
+                android:text="Juega para desbloquear"
+                android:textColor="@color/indigo"
+                android:textSize="24sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="461dp"
+        android:layout_height="133dp"
+        android:background="#807C85C6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginRight="-11dp"
+        android:orientation="horizontal">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImagei"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ardilla"
+            app:layout_constraintVertical_bias="0.383" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bangers"
+                android:text="Nivel 8"
+                android:textColor="@color/indigo"
+                android:textSize="34sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bangers"
+                android:text="Juega para desbloquear"
+                android:textColor="@color/indigo"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/bangers"
+        android:text="Caballo"
+        android:textColor="@color/indigo"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="368dp"
+        android:layout_marginLeft="368dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/bangers"
+        android:text="Completa la colección y desbloquea un juego premium por un día"
+        android:textColor="#FDFDFE"
+        android:textSize="22sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="347dp"
+        android:layout_marginLeft="347dp"
+        android:background="?android:attr/listDivider"
+        android:foreground="@color/deep_purple"
+        android:scrollbarThumbHorizontal="@color/deep_purple"
+        android:scrollbarThumbVertical="@color/deep_purple" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="@font/bangers"
+        android:text="Nivel 2"
+        android:textColor="@color/indigo"
+        android:textSize="26sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gut"
+    tools:context=".abel.Chat_Activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="15dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoPerfil"
+            android:layout_width="76dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/image"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="127dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="135dp"
+            android:text="Log. Diana Molina"
+            android:textColor="#F6F4F4"
+            android:textColorHighlight="#F4F3F3"
+            android:textColorHint="#F4F3F3" />
+        <TextView
+            android:id="@+id/experiencia"
+            android:layout_width="198dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="120dp"
+            android:text="3 años de experiencia"
+            android:textColor="#FBFBFB"
+            android:textColorHint="#F4F3F3" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="10sp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:background="@color/md_white_1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/idNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DianaMolina"
+                        android:textSize="20dp"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/idDes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:text="¿Hola, en que te puedo ayudar?"
+                        android:textSize="15dp"
+                        android:textColor="@color/md_black_1000"
+                        />
+                </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/idAvatar"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMensajes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        >
+
+        <EditText
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu Mensaje"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/md_black_1000"
+            android:layout_weight="1"
+            android:background="@color/md_white_1000"
+            android:shadowColor="@color/md_black_1000">
+        </EditText>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnEnviar"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="5sp"
+            android:textSize="15dp"
+
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:drawableTop="@drawable/ic_baseline_send_24"
+            android:fontFamily="sans-serif-light"
+            android:backgroundTint="@color/md_orange_700"
+            android:textColor="@color/md_white_1000"
+            app:cardCornerRadius="20sp"
+            >
+            <TextView
+                android:id="@+id/icoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/md_white_1000"
+                android:backgroundTint="@color/md_white_1000"
+                android:layout_gravity="center_vertical|center_horizontal">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

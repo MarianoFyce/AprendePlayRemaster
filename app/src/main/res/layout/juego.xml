@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoj">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="10dp">
+
+        //FILA 1
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/boton00"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton01"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton02"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton03"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"></ImageButton>
+
+        </TableRow>
+
+        //FILA 2
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/boton04"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton05"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton06"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton07"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"></ImageButton>
+
+        </TableRow>
+
+        //FILA 3
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/boton08"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton09"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"></ImageButton>
+
+        </TableRow>
+
+        //FILA 4
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/boton12"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton13"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="1"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton14"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="2"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/boton15"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="3"></ImageButton>
+
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botonJuegoReiniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boton_juego_reinit">
+
+            </Button>
+
+            <Button
+                android:id="@+id/botonJuegoSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boton_juego_quit">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/texto_puntuacion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@android:color/background_light"
+                android:textColorHighlight="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:textSize="45sp"></TextView>
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</LinearLayout>

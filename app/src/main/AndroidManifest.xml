@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aprende_play">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".juegopaint.A_9_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_9_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_9_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_7_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_7_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_7_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_6_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_6_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_6_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_5_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_5_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_5_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_4_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_4_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_4_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_3_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_3_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_3_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_2_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_2_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_1_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_2_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_1_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_1_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_0_Valid"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.Validar_8"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_0_Paint"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.A_0_Teach"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.DrawView"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.Teachgame"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.InicioJuego"
+            android:exported="true" />
+        <activity
+            android:name=".juegopaint.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Premios"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Instrucciones"
+            android:exported="true" />
+        <activity
+            android:name=".Reintento"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Juego2"
+            android:exported="true" />
+        <activity
+            android:name=".video"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Video2"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".abel.Resp"
+            android:exported="true" />
+        <activity
+            android:name=".info_covid"
+            android:exported="true" />
+        <activity
+            android:name=".Juegos"
+            android:exported="true" />
+        <activity
+            android:name=".abel.Avances"
+            android:exported="true" />
+        <activity
+            android:name=".Giff"
+            android:exported="true" />
+        <activity
+            android:name=".abel.Res1"
+            android:exported="true" />
+        <activity
+            android:name=".abel.Notificaciones"
+            android:exported="true" />
+        <activity
+            android:name=".abel.DonarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".abel.Chat_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".abel.Preguntas"
+            android:exported="true" />
+        <activity
+            android:name=".abel.Pantalla_Opciones"
+            android:exported="true" />
+        <activity
+            android:name=".juegos.Juego"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".Seleccion"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

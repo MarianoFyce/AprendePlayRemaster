@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout tools:context=".Juegos"
+    android:orientation="vertical"
+    android:background="@drawable/fondoj"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/juegaplay"
+        android:id="@+id/imageView7"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_height="200sp"
+                android:layout_width="200sp"
+                app:srcCompat="@drawable/lavarmanos2"
+                android:id="@+id/btnMemorama"
+                android:onClick="ins"
+                />
+            <ImageView
+                android:layout_height="200sp"
+                android:layout_width="200sp"
+                app:srcCompat="@drawable/dibnum"
+                android:id="@+id/imageView10"
+                android:onClick="jeugo3"/>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:onClick="memo"
+                app:srcCompat="@drawable/memorama" />
+
+
+
+
+            <ImageView
+            android:layout_height="200sp"
+            android:layout_width="200sp"
+            app:srcCompat="@drawable/num"
+            android:id="@+id/btnBloquead"
+            android:onClick="onclick"
+            android:layout_gravity="center"
+            />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifIeView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/swipe"
+        android:layout_gravity="center"
+        />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_height="200sp"
+                android:layout_width="200sp"
+                app:srcCompat="@drawable/dodo"
+                android:id="@+id/dod"
+                android:onClick="onclick"
+                />
+
+
+            <ImageView
+                android:id="@+id/dia"
+                android:layout_width="200sp"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                app:srcCompat="@drawable/histori" />
+
+
+            <ImageView
+                android:layout_height="200sp"
+                android:layout_width="200sp"
+                app:srcCompat="@drawable/rompe"
+                android:id="@+id/rom"
+                android:onClick="onclick"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/swipe"
+        android:layout_gravity="center"
+         />
+
+</LinearLayout>

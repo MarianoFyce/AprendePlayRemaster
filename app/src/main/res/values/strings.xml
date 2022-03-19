@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aprende Play</string>
+    <string name="boton_juego_reinit">Reiniciar</string>
+    <string name="boton_juego_quit">Salir</string>
+
+    <string name="mini_title">Selecciona una opcion:</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_avances.xml" value="0.15" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_donar.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_error.xml" value="0.29874776386404295" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_gamep2.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_giff.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_info_covid.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_instrucciones.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_juegos.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_login.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_main.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_notificaciones.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_pantalla_opciones.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_premios.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_reintento.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_seleccion.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_tris.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_video.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/activity_video2.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/instrucciones.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/LENOVO/Documents/GRIS/zavaleta/Aprende_Play/app/src/main/res/layout/juego.xml" value="0.17395833333333333" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a0_paint.xml" value="0.1" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a0_teach.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a0_valid.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a1_paint.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a1_teach.xml" value="0.2" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a1_valid.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a2_paint.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a2_teach.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a2_valid.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a3_paint.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a3_teach.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a3_valid.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a4_paint.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a4_teach.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a4_valid.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a5_paint.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a5_teach.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a5_valid.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a6_paint.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a6_teach.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a6_valid.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a7_paint.xml" value="0.2359375" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a7_teach.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a7_valid.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a9_paint.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a9_teach.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_a9_valid.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_inicio_juego.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_juegos.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_pantalla_opciones.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_reintento.xml" value="0.1" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_teachgame.xml" value="0.264" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_validar8.xml" value="0.1" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/instrucciones.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/juego.xml" value="0.19882246376811594" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/drawable/btn_fondo_color.xml" value="0.2203125" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/drawable/fondo2.xml" value="0.2203125" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/drawable/fondo_barra.xml" value="0.2203125" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/drawable/logo_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/drawable/tarjeta.xml" value="0.2203125" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_avances.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_chat.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_donar.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_gamep2.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_giff.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_info_covid.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_juego2.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_juegos.xml" value="0.25" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_login.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_main.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_notificaciones.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_pantalla_opciones.xml" value="0.22" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_preguntas.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_res1.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_resp.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_seleccion.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_video.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/activity_video2.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/AndroidStudioProjects/Aprende_Play/app/src/main/res/layout/juego.xml" value="0.1033434650455927" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/drawable/btn_fondo_color.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/drawable/fondo2.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/drawable/fondo_barra.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/drawable/ic_flecha_retorno.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/drawable/logo_background.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/drawable/tarjeta.xml" value="0.1125" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_avances.xml" value="0.25" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_chat.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_donar.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_gamep2.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_giff.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_info_covid.xml" value="0.33" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_juego2.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_juegos.xml" value="0.22" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_notificaciones.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_pantalla_opciones.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_preguntas.xml" value="0.18" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_res1.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_resp.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_seleccion.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_video.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/activity_video2.xml" value="0.1" />
+        <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/juego.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.12771739130434784" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoj"
+    tools:context=".video"
+    android:orientation="vertical">
+
+    <!--codigo pantalla de video1-->
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_marginLeft="200dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="si"
+            android:src="@drawable/lavar"
+            />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_marginLeft="100dp"
+            android:id="@+id/gifImageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/saludo"
+            android:onClick="e"
+            />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_marginLeft="100dp"
+            android:id="@+id/gifImageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/golpe"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
