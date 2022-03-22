@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "44190973739",
+    "project_id": "aprendeplaybase",
+    "storage_bucket": "aprendeplaybase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44190973739:android:e9ad12e6c712adcaf48f6e",
+        "android_client_info": {
+          "package_name": "com.example.aprende_play"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44190973739-620g4vq66ebrgs55agvq5l9vet9mfp5q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aprende_play",
+            "certificate_hash": "ef8fa90ade1205591e44c847a5792d29a9f6d809"
+          }
+        },
+        {
+          "client_id": "44190973739-sd27iung95uen6oqfl06mts76d54jfc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPX6NgwLqkqI7xaLozhbiuet2rkq4Ufjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44190973739-sd27iung95uen6oqfl06mts76d54jfc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

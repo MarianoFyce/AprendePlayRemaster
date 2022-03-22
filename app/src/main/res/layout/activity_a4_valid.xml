@@ -7,10 +7,22 @@
     android:background="@drawable/fondoj"
     tools:context=".juegopaint.A_4_Valid">
 
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="417dp"
+        android:layout_height="580dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202"
+        app:srcCompat="@drawable/fondore" />
+
     <Button
         android:id="@+id/button"
-        android:layout_width="236dp"
-        android:layout_height="57dp"
+        android:layout_width="269dp"
+        android:layout_height="59dp"
         android:background="@drawable/btn_fondo_color"
         android:backgroundTint="@color/md_yellow_A700"
         android:elevation="5dp"
@@ -21,40 +33,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="236dp"
-        android:layout_height="57dp"
-        android:background="@drawable/btn_fondo_color"
-        android:backgroundTint="@color/md_yellow_A700"
-        android:elevation="5dp"
-        android:foreground="?selectableItemBackground"
-        android:onClick="va2"
-        android:text="Volver a intentar"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="281dp"
-        android:layout_height="476dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
-        app:srcCompat="@drawable/fondore" />
+        app:layout_constraintVertical_bias="0.958" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -67,7 +48,26 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="268dp"
+        android:layout_height="57dp"
+        android:background="@drawable/btn_fondo_color"
+        android:backgroundTint="@color/md_yellow_A700"
+        android:elevation="5dp"
+        android:foreground="?selectableItemBackground"
+        android:onClick="va2"
+        android:text="Volver a intentar"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
