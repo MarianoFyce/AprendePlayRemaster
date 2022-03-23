@@ -44,6 +44,7 @@ public class RegistroLogin extends AppCompatActivity implements View.OnClickList
         auth = FirebaseAuth.getInstance();
     }
     //se inicia firebase
+    //prueba
     private void iniciarFirebase() {
         FirebaseApp.initializeApp(this);
         firebaseDatabase = FirebaseDatabase.getInstance();
