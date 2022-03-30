@@ -23,7 +23,7 @@ public class A_5_Teach extends AppCompatActivity {
         setContentView(R.layout.activity_a5_teach);
 
         ochoo = (Button) findViewById(R.id.button3);
-        mp3 = MediaPlayer.create(this,R.raw.audioteach8);
+        mp3 = MediaPlayer.create(this,R.raw.aucinco);
         mp3.start();
         ochoo.setOnClickListener(new View.OnClickListener() {
             @Override
