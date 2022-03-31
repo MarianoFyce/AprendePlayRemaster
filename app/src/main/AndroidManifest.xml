@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".juegopaint.InicioJuego"
+            android:exported="true" />
+        <activity
             android:name=".RegistroLogin"
             android:exported="true" />
         <activity
@@ -101,9 +104,6 @@
             android:exported="true" />
         <activity
             android:name=".juegopaint.Teachgame"
-            android:exported="true" />
-        <activity
-            android:name=".juegopaint.InicioJuego"
             android:exported="true" />
         <activity
             android:name=".juegopaint.MainActivity"

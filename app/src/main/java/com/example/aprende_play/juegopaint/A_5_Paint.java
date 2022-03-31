@@ -49,7 +49,7 @@ public class A_5_Paint extends AppCompatActivity {
         ////////////parte del video
         videoView = findViewById(R.id.videoocho);
 
-        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+ R.raw.nuevee));
+        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+ R.raw.cincoo));
 
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);

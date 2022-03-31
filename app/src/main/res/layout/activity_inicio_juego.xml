@@ -1,51 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoj"
     tools:context=".juegopaint.InicioJuego">
 
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/blue"
-        android:backgroundTint="@color/blue"
-        android:onClick="vamos"
-        android:text="¡ Vamos !"
+        android:id="@+id/button2"
+        android:layout_width="188dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/md_divider_white"
+        android:text="Seleccionar número"
         android:textColor="@color/white"
         app:iconTint="#FFC107"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.954" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView13"
+        android:layout_width="410dp"
+        android:layout_height="438dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/aprenn" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/aprenn" />
+        app:layout_constraintVertical_bias="0.468"
+        app:srcCompat="@drawable/maestra1" />
 
     <TextView
         android:id="@+id/textView"
@@ -53,25 +42,166 @@
         android:layout_height="wrap_content"
         android:text="Aprendamos los números"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/white"
-        app:layout_constraintVertical_bias="0.464" />
+        app:layout_constraintVertical_bias="0.394" />
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="del 0 al 9"
-        android:textColor="@color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintHorizontal_bias="0.697"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.473" />
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="98dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        app:srcCompat="@drawable/selecciona" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="291dp"
+        android:layout_height="144dp"
+        android:background="@drawable/jugarn2"
+        android:onClick="vamos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menu"
+        android:layout_width="127dp"
+        android:layout_height="1068dp"
+        android:layout_gravity="end|bottom"
+        app:fabSize="normal"
+        app:fab_addButtonSize="normal"
+        app:fab_labelStyle="@style/etiqueta"
+        app:fab_size="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957"
+        tools:ignore="MissingConstraints">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t9"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/nuevepng"
+            app:fab_title="Nueve"
+
+            tools:ignore="MissingConstraints" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t8"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/ochopng"
+            app:fab_title="Ocho"
+
+            tools:ignore="MissingConstraints" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t7"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/sietepng"
+            app:fab_title="Siete"
+
+            tools:ignore="MissingConstraints" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t6"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/seispng"
+            app:fab_title="Seis"
+
+            tools:ignore="MissingConstraints" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t5"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/cincopng"
+            app:fab_title="Cinco"
+
+            tools:ignore="MissingConstraints" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t4"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/cuatropng"
+            app:fab_title="Cuatro"
+
+            tools:ignore="MissingConstraints" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t3"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/dospng"
+            app:fab_title="Tres"
+
+            tools:ignore="MissingConstraints" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t2"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/dospng"
+            app:fab_title="Dos"
+
+            tools:ignore="MissingConstraints" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/accion_favorito1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="t1"
+            app:fabSize="normal"
+            app:fab_icon="@drawable/unopng"
+            app:fab_title="Uno"
+
+            tools:ignore="MissingConstraints" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -3,13 +3,11 @@ package com.example.aprende_play;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.aprende_play.juegopaint.InicioJuego;
-import com.example.aprende_play.juegopaint.MainActivity;
 import com.example.aprende_play.juegos.Juego;
 
 public class Juegos extends AppCompatActivity {

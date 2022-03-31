@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         ////////////parte del video
         videoView = findViewById(R.id.videoocho);
 
-        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+ R.raw.numocho));
+        videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+ R.raw.ochooo));
 
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);
