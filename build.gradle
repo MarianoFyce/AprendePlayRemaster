@@ -3,6 +3,15 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+            credentials {
+                // Be sure to add these non-sensitive credentials in order to retrieve dependencies from
+                // the private repository.
+                username mavenUsername
+                password mavenPassword
+            }
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.2"

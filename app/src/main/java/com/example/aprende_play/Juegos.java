@@ -44,6 +44,8 @@ public class Juegos extends AppCompatActivity {
 
                 AlertDialog dialog = builder.create();
                 dialog.show();
+                Intent pasacomp = new Intent(Juegos.this, PayPremium.class);
+                startActivity(pasacomp);
                 break;
 
             case R.id.dod:
