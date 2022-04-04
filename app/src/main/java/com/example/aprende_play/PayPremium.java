@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +25,10 @@ import com.paypal.android.sdk.payments.PaymentConfirmation;
 public class PayPremium extends Activity {
 
     public static final String TAG = "Payment exmaple";
-    public static final String PAYPAL_KEY = "AcoDs5EI1AmXNrYbw2qgIFWZbQ3Q7cSXpSiY9L5sP5PLg8vMPUuCmjdo7dFjhFcYqEpePQxgLjNuS-GR";
+    public static final String PAYPAL_KEY = "AesEiVBEJvXAbQqVP96sTO9onJJ5qSF5m_tcbmDFVIS6tGb3tBQZqK72P6h5y_wuPKMGuDNuaGHGJEb2";
     private static final int REQUEST_CODE_PAYMENT = 1;
     private static final int REQUEST_CODE_FUTURE_PAYMENT = 2;
-    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_SANDBOX;
+    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_PRODUCTION;
     //PayPalPayment getThingToBuy;
     private static PayPalConfiguration config;
     //= new PayPalConfiguration()
@@ -44,30 +45,35 @@ public class PayPremium extends Activity {
     //      Uri.parse("https://www.mi_tienda.com/legal"));
 
     PayPalPayment getThingToBuy;
+    Button order;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay_premium);
-
-        findViewById(R.id.order).setOnClickListener(new OnClickListener() {
+order = (Button)findViewById(R.id.order); 
+        order.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PayPremium.this,
-                        PayPalService.class);
-                intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
-
-                 getThingToBuy= new PayPalPayment(new BigDecimal(String.valueOf("1")), "USD",
-                        "premium", PayPalPayment.PAYMENT_INTENT_SALE);
-                Intent payment = new Intent(PayPremium.this, PaymentActivity.class);
-                payment.putExtra(PaymentActivity.EXTRA_PAYMENT, getThingToBuy);
-                payment.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
-                startActivityForResult(payment, REQUEST_CODE_PAYMENT);
+           makePago();
 
             }
         });
         configPaypal();
+    }
+
+    private void makePago() {
+        Intent intent = new Intent(PayPremium.this,
+                PayPalService.class);
+        intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
+
+        getThingToBuy= new PayPalPayment(new BigDecimal(String.valueOf("11")), "MXN",
+                "premium", PayPalPayment.PAYMENT_INTENT_SALE);
+        Intent payment = new Intent(PayPremium.this, PaymentActivity.class);
+        payment.putExtra(PaymentActivity.EXTRA_PAYMENT, getThingToBuy);
+        payment.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
+        startActivityForResult(payment, REQUEST_CODE_PAYMENT);
     }
 
     private void configPaypal() {
