@@ -4,12 +4,11 @@ plugins {
 }
 
 android {
-    compileSdk 29
-
+    compileSdk 30
     defaultConfig {
         applicationId "com.example.aprende_play"
         minSdk 16
-        targetSdk 29
+        targetSdk 30
         versionCode 1
         versionName "1.0"
 
@@ -60,7 +59,11 @@ dependencies {
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
 
     //Dependencia Paypal
+    //implementation 'com.paypal.checkout:android-sdk:0.2.0'
+
     implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+    implementation 'com.paypal.checkout:android-sdk:0.2.0'
+    //implementation 'com.braintreepayments.api:drop-in:6.0.1'
 
     // implementation('com.paypal.checkout:android-sdk:0.2.0')
     //implementation 'com.paypal.sdk:paypal-android-sdk:2.14.4'
