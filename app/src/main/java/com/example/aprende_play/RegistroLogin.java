@@ -1,153 +1,165 @@
 package com.example.aprende_play;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Base64;
+import android.util.Patterns;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import java.util.UUID;
 
-public class RegistroLogin extends AppCompatActivity implements View.OnClickListener {
-    public EditText correo1,contraseña1,nombre1,edad1,sexo1;//
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.appcompat.app.AppCompatActivity;
 
-    Button registrar;
+import com.example.aprende_play.chat.PreferenceManager;
+import com.example.aprende_play.databinding.ActivityRegistroLoginBinding;
+import com.google.firebase.firestore.FirebaseFirestore;
 
-    FirebaseDatabase firebaseDatabase;
-    DatabaseReference databaseReference;
-    public FirebaseAuth auth;
+import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.HashMap;
+
+public class RegistroLogin extends AppCompatActivity {
+    private ActivityRegistroLoginBinding binding;
+private  String encodedImage;
+private PreferenceManager preferenceManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro_login);
+        binding = ActivityRegistroLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+preferenceManager = new PreferenceManager(getApplicationContext());
 
-        correo1 = (EditText) findViewById(R.id.correo);
-        contraseña1 = (EditText) findViewById(R.id.contraseña);
-        nombre1 = (EditText) findViewById(R.id.nombre);
-        edad1 = (EditText) findViewById(R.id.edad);
-        sexo1 = (EditText) findViewById(R.id.sexo);
-
-        registrar = (Button) findViewById(R.id.registrar);
-
-        registrar.setOnClickListener(this);
-
-        iniciarFirebase();
-
-        auth = FirebaseAuth.getInstance();
-    }
-    //se inicia firebase
-    //prueba
-    private void iniciarFirebase() {
-        FirebaseApp.initializeApp(this);
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference();
-    }
-    //limpia cajas
-    private void limpiar() {
-        correo1.setText("");
-        contraseña1.setText("");
-        nombre1.setText("");
-        edad1.setText("");
-        sexo1.setText("");
-
-
+        setListeners();
 
     }
-    // De aquí
-    @Override
-    public void onClick(View v) {
-        String correo = correo1.getText().toString();
-        String contraseña = contraseña1.getText().toString();
-        String nombre = nombre1.getText().toString();
-        String edad = edad1.getText().toString();
-        String sexo = sexo1.getText().toString();
 
-        switch (v.getId()){
-            case R.id.registrar:{
-
-                if (correo.equals("")||contraseña.equals("")||nombre.equals("")||edad.equals("")||sexo.equals("") ) {
-                    validacion();
-                    Toast.makeText(this, "Campos vacios", Toast.LENGTH_SHORT).show();
-
-                } else {
-
-                    if (contraseña.length() >= 6){
-                        registraUsuario();
-                    }else {                    Toast.makeText(this, "El password debe tener minimo 6 carácteres", Toast.LENGTH_SHORT).show();
-                    }
-
-                }
-                break;}
-
-            default: break;
+    private void setListeners() {
+        binding.volver.setOnClickListener(v -> onBackPressed());
+    binding.registrar.setOnClickListener(v ->{
+        if (isValidSignDetail()){
+            signUp();
         }
-        return;
+    });
+    binding.frameimage.setOnClickListener(v ->{
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        pickImage.launch(intent);
+    });
+
     }
 
-    private void registraUsuario() {
-        String correo = correo1.getText().toString();
-        String contraseña = contraseña1.getText().toString();
-        auth.createUserWithEmailAndPassword(correo,contraseña).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
 
-                if (task.isSuccessful()){
-                    String correo = correo1.getText().toString();
-                    String contraseña = contraseña1.getText().toString();
-                    String nombre = nombre1.getText().toString();
-                    String edad = edad1.getText().toString();
-                    String sexo = sexo1.getText().toString();
+    private void showToast(String mensaje){
+        Toast.makeText(getApplicationContext(),mensaje, Toast.LENGTH_SHORT).show();
+    }
+private void signUp(){
+        loading(true);
+    FirebaseFirestore database = FirebaseFirestore.getInstance();
+    HashMap<String,Object> user = new HashMap<>();
+    user.put(DatosTutores.KEY_IMAGE,encodedImage);
+    user.put(DatosTutores.KEY_NAME,binding.nombre.getText().toString());
+    user.put(DatosTutores.KEY_EMAIL,binding.correo.getText().toString());
+    user.put(DatosTutores.KEY_PASSWORD,binding.contraseA.getText().toString());
+    user.put(DatosTutores.KEY_EDAD,binding.edad.getText().toString());
+    user.put(DatosTutores.KEY_SEXO,binding.sexo.getText().toString());
+    database.collection(DatosTutores.KEY_COLLECTION_USERS)
+            .add(user)
+            .addOnSuccessListener(documentReference -> {
+                loading(false);
+                preferenceManager.putBoolean(DatosTutores.KEY_IS_SIGNED_IN,true);
+                preferenceManager.putString(DatosTutores.KEY_USER_ID,documentReference.getId());
+                preferenceManager.putString(DatosTutores.KEY_IMAGE,encodedImage);
+                preferenceManager.putString(DatosTutores.KEY_NAME,binding.nombre.getText().toString());
 
-                    DatosTutores p = new DatosTutores();
-                    p.setId(UUID.randomUUID().toString());
-                    p.setCorreoo(correo);
-                    p.setContraseñaa(contraseña);
-                    p.setNombree(nombre);
-                    p.setEdadd(edad);
-                    p.setSexoo(sexo);
+               Intent intent = new Intent(getApplicationContext(),PayPremium.class);
+               intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+               startActivity(intent);
+            })
+            .addOnFailureListener(exception ->{
+                loading(false);
+                showToast(exception.getMessage());
 
+    });
+}
+private String encodedImage(Bitmap bitmap){
+        int previewWidth = 150;
+        int previewHeight = bitmap.getHeight() * previewWidth / bitmap.getWidth();
+    Bitmap prevewBitmap = Bitmap.createScaledBitmap(bitmap, previewWidth,previewHeight,false);
+    ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+    prevewBitmap.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
+    byte[] bytes = byteArrayOutputStream.toByteArray();
+    return Base64.encodeToString(bytes, Base64.DEFAULT);
 
-                    databaseReference.child("AprendePlayBase").child(p.getId()).setValue(p);
-                    Toast.makeText(RegistroLogin.this, "REGISTRO EXITOSO", Toast.LENGTH_SHORT).show();
-                    limpiar();
-                    Intent i1 = new Intent(RegistroLogin.this,Login.class);
-                    startActivity(i1);
-                }else{
-                    Toast.makeText(RegistroLogin.this, "No se puede registrar", Toast.LENGTH_SHORT).show();
-                    System.out.println("ERROR : "+ task.getException());
+    }
+private final ActivityResultLauncher<Intent> pickImage = registerForActivityResult(
+        new ActivityResultContracts.StartActivityForResult(),
+        result -> {
+            if (result.getResultCode()== RESULT_OK){
+                if(result.getData() != null){
+                    Uri imageUri = result.getData().getData();
+                    try {
+                        InputStream inputStream = getContentResolver().openInputStream(imageUri);
+                        Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+                        binding.imperfil.setImageBitmap(bitmap);
+                        binding.addImage.setVisibility(View.GONE);
+                        encodedImage= encodedImage(bitmap);
+
+                    }catch (FileNotFoundException e){
+                        e.printStackTrace();
+                    }
                 }
             }
-        });
-    }
-
-    private void validacion() {
-        String correo = correo1.getText().toString();
-        String contraseña = contraseña1.getText().toString();
-        String nombre = nombre1.getText().toString();
-        String edad = edad1.getText().toString();
-        String sexo = sexo1.getText().toString();
+        }
+);
 
 
+private Boolean isValidSignDetail(){
+        if (encodedImage == null){
+            showToast("Seleciona foto de perfil");
+            return false;
+        }else if(binding.correo.getText().toString().trim().isEmpty()){
+            showToast("Agrega tú correo");
+            return false;
+        }else if (!Patterns.EMAIL_ADDRESS.matcher(binding.correo.getText().toString()).matches()){
+            showToast("Agrega un correo valido");
+            return false;
+        }else if (binding.contraseA.getText().toString().trim().isEmpty()){
+            showToast("Agrega una contraseña");
+            return false;
+        }else if (!binding.confirmarcontraseA.getText().toString().equals(binding.contraseA.getText().toString())){
+            showToast("La contraseña no coincide");
+            return false;
+        }else if (binding.nombre.getText().toString().trim().isEmpty()){
+            showToast("Agrega un nombre");
+            return false;
 
-        if (correo.equals("")) {
-            correo1.setError("Campo Vacio");
-        } else if (contraseña.equals("")) {
-            contraseña1.setError("Campo Vacio");
-        } else if (nombre.equals("")) {
-            nombre1.setError("Campo Vacio");
-        } else if (edad.equals("")) {
-            edad1.setError("Campo Vacio");
-        }else if (sexo.equals("")) {
-            sexo1.setError("Campo Vacio");
+        }else if (binding.edad.getText().toString().trim().isEmpty()){
+            showToast("Agrega tú edad");
+            return false;
+
+        }else if (binding.sexo.getText().toString().trim().isEmpty()){
+            showToast("H/M");
+            return false;
+        }else {
+            return true;
+        }
+}
+private  void loading(Boolean isloading){
+        if (isloading){
+            binding.registrar.setVisibility(View.INVISIBLE);
+            binding.progresbar.setVisibility(View.VISIBLE);
+
+        }else{
+            binding.progresbar.setVisibility(View.INVISIBLE);
+            binding.registrar.setVisibility(View.VISIBLE);
+
         }
 
-    }
+}
+
 }

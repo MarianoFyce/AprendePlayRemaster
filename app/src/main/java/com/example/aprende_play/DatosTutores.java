@@ -2,62 +2,16 @@ package com.example.aprende_play;
 
 public class DatosTutores {
 
-    private String id;
-    private String correoo; //este es el correo
+    public static final String KEY_COLLECTION_USERS= "usuarios";
+    public static final String KEY_NAME= "nombre";
+    public static final String KEY_EMAIL= "correo";
+    public static final String KEY_PASSWORD= "contraseña";
+    public static final String KEY_SEXO= "sexo";
+    public static final String KEY_EDAD= "edad";
+    public static final String KEY_PREFERENCE_NAME= "chatAppPreference";
+    public static final String KEY_IS_SIGNED_IN= "isSignedIn";
+    public static final String KEY_USER_ID= "userId";
+    public static final String KEY_IMAGE = "image";
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getCorreoo() {
-        return correoo;
-    }
-
-    public void setCorreoo(String correoo) {
-        this.correoo = correoo;
-    }
-
-    public String getContraseñaa() {
-        return contraseñaa;
-    }
-
-    public void setContraseñaa(String contraseñaa) {
-        this.contraseñaa = contraseñaa;
-    }
-
-    public String getNombree() {
-        return nombree;
-    }
-
-    public void setNombree(String nombree) {
-        this.nombree = nombree;
-    }
-
-    public String getEdadd() {
-        return edadd;
-    }
-
-    public void setEdadd(String edadd) {
-        this.edadd = edadd;
-    }
-
-    public String getSexoo() {
-        return sexoo;
-    }
-
-    public void setSexoo(String sexoo) {
-        this.sexoo = sexoo;
-    }
-
-    private String contraseñaa;
-
-    private String nombree;
-    private String edadd;
-    private String sexoo;
-
-
+    public static final String KEY_FCM_TOKEN = "fcmToken";
 }

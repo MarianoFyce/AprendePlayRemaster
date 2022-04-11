@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    tools:context=".chat.Logchat"
+    android:background="@drawable/fondoj">
+
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/avatar"
+        android:layout_marginTop="32dp"
+        />
+    <TextView
+        android:text="Información de Perfil"
+        android:textAlignment="center"
+        android:layout_marginTop="19dp"
+        android:textSize="20sp"
+        android:textStyle="bold|normal"
+        android:textColor="#072DFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Porfavor agrega tú nombre y una fotografia"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="bold|normal"
+        android:textColor="#070707"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="28dp"
+        android:background="@color/blue"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:background="@color/transparente"
+    android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/nombre"
+        android:hint="Nombre completo"
+        android:padding="10dp"
+        android:ems="1"
+        android:inputType="textAutoComplete"
+        android:textSize="20sp"
+        android:textStyle="bold|normal"
+        android:textColor="#F41A0A"
+        android:layout_marginBottom="15dp"
+        android:background="@color/transparente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+        <Button
+            android:id="@+id/Logea"
+            android:text="Continuar"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_fondo_color">
+
+
+        </Button>
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.aprende_play">
     <!-- for card.io card scanning -->
     <uses-permission android:name="android.permission.CAMERA" />
@@ -23,7 +24,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".Paypal"
+            android:name=".chat.adapter.UsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chat.ActivityVista"
+            android:exported="false" />
+        <activity
+            android:name=".chat.Lista_Especialistas"
+            android:exported="false" />
+        <activity
+            android:name=".chat.Logchat"
+            android:exported="false" />
+        <activity
+            android:name=".pays.CheckoutActivity"
             android:exported="false" />
         <activity
             android:name=".PayPremium"
@@ -120,7 +133,8 @@
             android:exported="true" />
         <activity
             android:name=".juegopaint.DrawView"
-            android:exported="true" />
+            android:exported="true"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".juegopaint.Teachgame"
             android:exported="true" />
@@ -217,6 +231,17 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <service
+            android:name=".chat.MensajeServicio"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

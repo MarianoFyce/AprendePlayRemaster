@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".chat.Lista_Especialistas">
+    <TextView
+        android:text="@string/app_name"
+        android:textSize="25sp"
+        android:textStyle="bold|normal"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#E91E63"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/app_name"
+        android:textSize="16sp"
+        android:textStyle="bold|normal"
+        android:textAlignment="textStart"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#6311F4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mrec"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_perfiles"
+            android:layout_width="119dp"
+            android:layout_height="119dp"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

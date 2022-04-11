@@ -753,4 +753,7 @@
         <item>@color/teal</item>
         <item>@color/pink</item>
     </integer-array>
+
+    <color name="price_button_grey">#555</color>
+
 </resources>

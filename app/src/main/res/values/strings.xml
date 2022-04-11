@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Aprende Play</string>
     <string name="boton_juego_reinit">Reiniciar</string>
@@ -13,4 +14,12 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="store_name" translatable="false">Plan Premium</string>
+
+    <!-- Checkout -->
+    <string name="googlepay_status_unavailable">Google Pay no está disponible.</string>
+    <string name="payments_show_name">Datos recibidos exitosamente para: %s!</string>
+    <string name="gateway_replace_name_example">"Puerta de enlace nombre establecido en \"example\" - porfavor modifique Constants.java y remplacélo con su propia gateway."</string>
+    <string name="checkout_item_description">Descripción</string>
 </resources>

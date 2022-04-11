@@ -1,93 +1,80 @@
 package com.example.aprende_play;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+import android.os.Bundle;
+import android.util.Patterns;
 import android.widget.Toast;
 
-import com.example.aprende_play.abel.Pantalla_Opciones;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Login extends AppCompatActivity implements View.OnClickListener{
-    Button button2,button;
+import com.example.aprende_play.chat.ActivityVista;
+import com.example.aprende_play.chat.PreferenceManager;
+import com.example.aprende_play.databinding.ActivityLoginBinding;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
-    EditText correo,contraseña;
-    public String corre= "";
-    public String contra = "";
-
-    private FirebaseAuth auth;
+public class Login extends AppCompatActivity {
+    private ActivityLoginBinding binding;
+    private PreferenceManager preferenceManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        preferenceManager = new PreferenceManager(getApplicationContext());
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        setListeners();
 
-        //declarar variables
-        correo=(EditText)findViewById(R.id.correo);
-        contraseña=(EditText)findViewById(R.id.contraseña);
-
-        button2= (Button) findViewById(R.id.button2);
-        button= (Button) findViewById(R.id.button);
-
-        button2.setOnClickListener(this);
-        button.setOnClickListener(this);
-        auth = FirebaseAuth.getInstance();
     }
 
-    @Override
-    public void onClick(View v) {
-
-
-        switch (v.getId()){
-            case R.id.button:
-
-                corre = correo.getText().toString();
-                contra = contraseña.getText().toString();
-
-                if (!corre.isEmpty()&& !contra.isEmpty()){
-                    loginUser();
-
-                }else{
-                    Toast.makeText(this,"Error campos vacios",Toast.LENGTH_SHORT).show();
-
-                }
-
-                break;
-            case R.id.button2:
-                Intent ob = new Intent(Login.this, RegistroLogin.class);
-                startActivity(ob);
-                break;
-        }
-    }
-
-    private void loginUser() {
-
-        auth.signInWithEmailAndPassword(corre,contra).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()){
-                    Intent i3 = new Intent(Login.this, Pantalla_Opciones.class);
-                    startActivity(i3);
-                    Toast.makeText(Login.this,"¡Bienvenido!",Toast.LENGTH_SHORT).show();
-                    limpiar();
-
-
-                }else{
-                    Toast.makeText(Login.this,"Datos incorrectos",Toast.LENGTH_SHORT).show();
-
-                }
+    private void setListeners() {
+        binding.button2.setOnClickListener(v ->
+                startActivity(new Intent(getApplicationContext(),RegistroLogin.class)));
+        binding.button.setOnClickListener(v ->{
+            if (isValidSigninDetail()){
+                signIn();
             }
         });
     }
-    public void limpiar(){
-        correo.setText("");
-        contraseña.setText("");
+    private void signIn(){
+        FirebaseFirestore database = FirebaseFirestore.getInstance();
+        database.collection(DatosTutores.KEY_COLLECTION_USERS)
+                .whereEqualTo(DatosTutores.KEY_EMAIL,binding.correo.getText().toString())
+                .whereEqualTo(DatosTutores.KEY_PASSWORD,binding.contraseA.getText().toString())
+                .get()
+                .addOnCompleteListener(task ->{
+                    if (task.isSuccessful() && task.getResult() != null
+                    && task.getResult().getDocuments().size() > 0){
+                        DocumentSnapshot documentSnapshot = task.getResult().getDocuments().get(0);
+                        preferenceManager.putBoolean(DatosTutores.KEY_IS_SIGNED_IN,true);
+                        preferenceManager.putString(DatosTutores.KEY_USER_ID, documentSnapshot.getId());
+                        preferenceManager.putString(DatosTutores.KEY_IMAGE, documentSnapshot.getString(DatosTutores.KEY_IMAGE));
+                        preferenceManager.putString(DatosTutores.KEY_NAME, documentSnapshot.getString(DatosTutores.KEY_NAME));
+
+                        Intent intent = new Intent(getApplicationContext(), ActivityVista.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(intent);
+                    }else {
+                        showToast("Datos no encontrados");
+                    }
+                });
+    }
+    private void showToast(String message){
+        Toast.makeText(getApplicationContext(),message,Toast.LENGTH_SHORT).show();
 
     }
+    private Boolean isValidSigninDetail(){
+        if(binding.correo.getText().toString().trim().isEmpty()){
+            showToast("Agrega Email");
+            return false;
+        }else if(!Patterns.EMAIL_ADDRESS.matcher(binding.correo.getText().toString()).matches()){
+            showToast("Agrega un correo valido");
+            return false;
+        }else if(binding.contraseA.getText().toString().trim().isEmpty()) {
+            showToast("Agrega una contraseña");
+            return false;
+        }else {
+            return true;
+        }
+    }
+
 }

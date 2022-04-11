@@ -1,14 +1,15 @@
 package com.example.aprende_play;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.aprende_play.juegopaint.InicioJuego;
 import com.example.aprende_play.juegos.Juego;
+import com.example.aprende_play.pays.CheckoutActivity;
 
 public class Juegos extends AppCompatActivity {
 
@@ -56,7 +57,7 @@ public class Juegos extends AppCompatActivity {
 
                 AlertDialog d = b.create();
                 d.show();
-                Intent pasacompA = new Intent(Juegos.this, PayPremium.class);
+                Intent pasacompA = new Intent(Juegos.this, CheckoutActivity.class);
                 startActivity(pasacompA);
                 break;
 
