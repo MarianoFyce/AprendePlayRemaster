@@ -5,10 +5,11 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/_8sdp">
+
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageProfile"
-        android:layout_width="@dimen/_120sdp"
-        android:layout_height="@dimen/_120sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
         android:background="@drawable/avatar"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,23 +36,22 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:layout_marginVertical="@dimen/_70sdp"
-        android:textColor="#D81303"
-        android:textStyle="bold"
-        android:textSize="@dimen/_17sdp"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_13sdp"
         app:layout_constraintBottom_toBottomOf="@id/viewsuport"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageProfile">
     </TextView>
     <TextView
-        android:id="@+id/texemaildes"
-        android:layout_width="215dp"
-        android:layout_height="90dp"
+        android:id="@+id/texrecenmensaje"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:ellipsize="end"
-        android:maxLines="3"
+        android:maxLines="1"
         android:textColor="@color/white"
-        android:textSize="@dimen/_16sdp"
+        android:textSize="@dimen/_12sdp"
         app:layout_constraintTop_toBottomOf="@id/textname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageProfile">

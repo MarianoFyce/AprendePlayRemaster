@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.aprende_play.chat.listeners.Userlisteners;
 import com.example.aprende_play.databinding.ItemContainerUsuariosBinding;
 
 import java.util.List;
@@ -16,9 +17,11 @@ import java.util.List;
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder>{
 
     private final List<Userr> userss;
+    private  final Userlisteners userlisteners;
 
-    public UserAdapter(List<Userr> users) {
+    public UserAdapter(List<Userr> users , Userlisteners userlisteners) {
         this.userss = users;
+        this.userlisteners = userlisteners;
     }
 
     @NonNull
@@ -51,8 +54,10 @@ UserViewHolder(ItemContainerUsuariosBinding itemContainerUsuariosBinding){
 }
 void setUserData(Userr userr){
     binding.textname.setText(userr.name);
-    binding.texemail.setText(userr.email);
+    //por descrip
+    binding.texemaildes.setText(userr.descrip);
     binding.imageProfile.setImageBitmap(getUserImage(userr.image));
+    binding.getRoot().setOnClickListener(view ->  userlisteners.onUserClicked(userr));
 
 }
 

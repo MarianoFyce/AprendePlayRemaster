@@ -6,11 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fondoj"
+    android:background="@drawable/blue"
     tools:context=".RegistroLogin">
 
 <LinearLayout
-
     android:layout_width="match_parent"
     android:layout_height="80dp"
     >
@@ -23,7 +22,7 @@
         android:layout_marginHorizontal="40dp"
         android:gravity="center_horizontal"
         android:text="Registrate"
-        android:textColor="@android:color/holo_orange_dark"
+        android:textColor="#fff"
         android:textSize="50sp"
         android:textStyle="bold"
         />
@@ -41,7 +40,7 @@
         android:layout_height="130dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="145dp"
-        android:background="@drawable/signo"
+        android:background="@drawable/pngeggr"
         app:riv_oval="true">
 
     </com.makeramen.roundedimageview.RoundedImageView>
@@ -49,12 +48,12 @@
     <TextView
         android:id="@+id/addImage"
         android:layout_width="110dp"
-        android:layout_height="20dp"
-        android:layout_marginHorizontal="155dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="195dp"
         android:gravity="center"
-        android:text="Agrega Imagén"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_11sdp"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_51sdp"
         >
 
     </TextView>
@@ -66,7 +65,22 @@
     android:layout_width="match_parent"
     android:layout_height="425dp"
     >
-
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="60dp"
+        android:gravity="center"
+        android:background="@color/transparente"
+        android:hint="Nombre"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="25sp"
+        />
     <EditText
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="60dp"
@@ -114,23 +128,23 @@
         android:textColorHint="@android:color/background_light"
         android:textSize="25sp"
         />
+
     <EditText
-        android:id="@+id/nombre"
+        android:id="@+id/sexo"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="60dp"
         android:gravity="center"
         android:background="@color/transparente"
-        android:hint="Nombre"
+        android:hint="Descripción breve"
         android:imeOptions="actionNext"
         android:inputType="text"
-        android:maxLength="20"
+        android:maxLength="50"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/background_light"
         android:textSize="25sp"
         />
-
     <EditText
         android:id="@+id/edad"
         android:layout_width="300dp"
@@ -148,22 +162,7 @@
         android:textSize="25sp"
         />
 
-    <EditText
-        android:id="@+id/sexo"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="60dp"
-        android:gravity="center"
-        android:background="@color/transparente"
-        android:hint="Sexo: Hombre/Mujer"
-        android:imeOptions="actionNext"
-        android:inputType="text"
-        android:maxLength="10"
-        android:textColor="@android:color/black"
-        android:textColorHint="@android:color/background_light"
-        android:textSize="25sp"
-        />
+
 </LinearLayout>
 
 <LinearLayout
@@ -181,7 +180,7 @@
             android:layout_width="210dp"
             android:layout_height="67dp"
             android:background="@drawable/btn_fondo_color"
-            android:backgroundTint="@color/md_purple_500"
+            android:backgroundTint="#142378"
             android:text="Registrar"
             android:textColor="@color/md_white_1000"
             android:textSize="24sp"
@@ -202,7 +201,7 @@
             android:layout_width="195dp"
             android:layout_height="67dp"
             android:background="@drawable/btn_fondo_color"
-            android:backgroundTint="@color/md_purple_500"
+            android:backgroundTint="#142378"
             android:text="Volver"
             android:textColor="@color/md_white_1000"
             android:textSize="24sp"

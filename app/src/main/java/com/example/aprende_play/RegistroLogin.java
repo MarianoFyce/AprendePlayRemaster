@@ -76,7 +76,7 @@ private void signUp(){
                 preferenceManager.putString(DatosTutores.KEY_IMAGE,encodedImage);
                 preferenceManager.putString(DatosTutores.KEY_NAME,binding.nombre.getText().toString());
 
-               Intent intent = new Intent(getApplicationContext(),PayPremium.class);
+               Intent intent = new Intent(getApplicationContext(),Login.class);
                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                startActivity(intent);
             })

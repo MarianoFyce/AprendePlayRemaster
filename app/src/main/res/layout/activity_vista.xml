@@ -8,6 +8,7 @@
     android:animateLayoutChanges="true"
     android:background="@color/md_blue_grey_900"
     tools:context=".chat.ActivityVista">
+
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imagenPerfil"
         android:layout_width="@dimen/_30sdp"
@@ -65,7 +66,24 @@ android:gravity="center"
         android:background="@drawable/background_content_bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagenPerfil"
-        />
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/conversationRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:padding="@dimen/_20sdp"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+        <ProgressBar
+            android:id="@+id/progresbar2"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabnewchat"
         android:layout_width="wrap_content"

@@ -24,6 +24,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".chat.ChatActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
             android:name=".chat.adapter.UsersActivity"
             android:exported="false" />
         <activity
