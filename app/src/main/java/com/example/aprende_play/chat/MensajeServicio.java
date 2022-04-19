@@ -13,21 +13,29 @@ import androidx.core.app.NotificationManagerCompat;
 import com.example.aprende_play.DatosTutores;
 import com.example.aprende_play.R;
 import com.example.aprende_play.chat.adapter.Userr;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.Random;
 
 public class MensajeServicio extends FirebaseMessagingService {
-
+    private FirebaseFirestore database;
+    private FirebaseMessaging datamensaje;
 
     @Override
     public void onNewToken(@NonNull String token) {
+        datamensaje = FirebaseMessaging.getInstance();
+        database = FirebaseFirestore.getInstance();
+
         super.onNewToken(token);
         //Log.d("FCM","Tokenj"+token);
     }
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
+        datamensaje = FirebaseMessaging.getInstance();
+        database = FirebaseFirestore.getInstance();
         super.onMessageReceived(remoteMessage);
         // Log.d("FCM",",Mensaje" + message.getNotification().getBody());
         Userr userr = new Userr();

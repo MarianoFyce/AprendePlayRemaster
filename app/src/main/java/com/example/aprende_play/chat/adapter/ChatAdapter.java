@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.aprende_play.chat.models.ChatMensaje;
 import com.example.aprende_play.databinding.ItemContainerReceibedMensajeBinding;
 import com.example.aprende_play.databinding.ItemContainerSentMensajeBinding;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.List;
 
@@ -20,12 +22,19 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public static final int VIEW_TYPE_SENT = 1;
     public static final int VIEW_TYPE_RECEIVED = 2;
+    private FirebaseFirestore database;
+    private FirebaseMessaging datamensaje;
 
     public void setReceivedPerfilImagen(Bitmap bitmap){
         receivedPerfilImagen = bitmap;
+        datamensaje = FirebaseMessaging.getInstance();
+        database = FirebaseFirestore.getInstance();
+
     }
 
     public ChatAdapter(List<ChatMensaje> ChatMensajes, Bitmap receivedPerfilImagen, String senderId) {
+        datamensaje = FirebaseMessaging.getInstance();
+        database = FirebaseFirestore.getInstance();
         this.ChatMensajes = ChatMensajes;
         this.receivedPerfilImagen = receivedPerfilImagen;
         this.senderId = senderId;
@@ -34,6 +43,8 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        datamensaje = FirebaseMessaging.getInstance();
+        database = FirebaseFirestore.getInstance();
         if (viewType == VIEW_TYPE_SENT){
             return  new SentMensajeView(
                     ItemContainerSentMensajeBinding.inflate(
@@ -55,6 +66,8 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        datamensaje = FirebaseMessaging.getInstance();
+        database = FirebaseFirestore.getInstance();
 if (getItemViewType(position) == VIEW_TYPE_SENT){
     ((SentMensajeView)holder).setData(ChatMensajes.get(position));
 }else{
@@ -94,6 +107,7 @@ if (getItemViewType(position) == VIEW_TYPE_SENT){
         private  final ItemContainerReceibedMensajeBinding binding;
 
         ReceivedMensajeViewh (ItemContainerReceibedMensajeBinding itemContainerReceibedMensajeBinding){
+
             super(itemContainerReceibedMensajeBinding.getRoot());
             binding = itemContainerReceibedMensajeBinding;
         }
