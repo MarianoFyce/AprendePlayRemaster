@@ -20,6 +20,7 @@ import java.util.List;
 public class UsersActivity extends BaseActivity implements Userlisteners {
 private ActivityUsersBinding binding;
 private PreferenceManager preferenceManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +29,13 @@ private PreferenceManager preferenceManager;
         preferenceManager = new PreferenceManager(getApplicationContext());
         setListeners();
         getUsers();
+
     }
 private void setListeners(){
      //   binding.imageback.setOnClickListener(v -> onBackPressed());
 }
     private  void getUsers(){
+
         loading(true);
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         database.collection(DatosTutores.KEY_COLLECTION_USERS)

@@ -129,6 +129,8 @@ public class ActivityVista extends BaseActivity implements ConversionListener {
 
     }
     private  void updateToken(String token){
+        preferenceManager.putString(DatosTutores.KEY_FCM_TOKEN,token);
+
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
                 database.collection(DatosTutores.KEY_COLLECTION_USERS).document(
