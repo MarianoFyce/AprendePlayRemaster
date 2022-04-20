@@ -34,8 +34,6 @@ public class MensajeServicio extends FirebaseMessagingService {
     }
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
-        datamensaje = FirebaseMessaging.getInstance();
-        database = FirebaseFirestore.getInstance();
         super.onMessageReceived(remoteMessage);
         // Log.d("FCM",",Mensaje" + message.getNotification().getBody());
         Userr userr = new Userr();
@@ -53,6 +51,7 @@ public class MensajeServicio extends FirebaseMessagingService {
         PendingIntent pendingIntent = PendingIntent.getActivity(this,0,intent,0);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this,channelId);
+        builder.setVisibility(NotificationCompat.VISIBILITY_PUBLIC);
         builder.setSmallIcon(R.drawable.ic_not);
         builder.setContentTitle(userr.name);
         builder.setContentText(remoteMessage.getData().get(DatosTutores.KEY_MENSAJE));
