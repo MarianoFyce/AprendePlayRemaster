@@ -24,6 +24,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".ui_especialistas.Citas"
+            android:exported="false" />
+        <activity
+            android:name=".ui_especialistas.Conversaciones"
+            android:exported="false" />
+        <activity
             android:name=".ui_especialistas.Mi_perfil"
             android:exported="false" />
         <activity

@@ -22,4 +22,6 @@
     <string name="payments_show_name">Datos recibidos exitosamente para: %s!</string>
     <string name="gateway_replace_name_example">"Puerta de enlace nombre establecido en \"example\" - porfavor modifique Constants.java y remplacélo con su propia gateway."</string>
     <string name="checkout_item_description">Descripción</string>
+    <string name="nom">Minerva gutierrez</string>
+    <string name="amabilidad">Mi niño se siente mucho mas tranquilo ahora</string>
 </resources>
