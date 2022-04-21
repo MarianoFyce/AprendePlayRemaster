@@ -126,4 +126,19 @@
         app:layout_constraintVertical_bias="0.217"
         app:srcCompat="@drawable/logi1" />
 
+    <TextView
+        android:id="@+id/onEsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar como especialista>"
+        android:onClick="ver_esp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

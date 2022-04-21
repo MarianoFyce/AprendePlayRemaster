@@ -3,10 +3,12 @@ package com.example.aprende_play;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.aprende_play.abel.Version_Especialista;
 import com.example.aprende_play.chat.PreferenceManager;
 import com.example.aprende_play.chat.adapter.UsersActivity;
 import com.example.aprende_play.databinding.ActivityLoginBinding;
@@ -77,4 +79,9 @@ public class Login extends AppCompatActivity {
         }
     }
 
+    public void ver_esp(View view) {
+        Intent e = new Intent(Login.this, Version_Especialista.class);
+        startActivity(e);
+
+    }
 }

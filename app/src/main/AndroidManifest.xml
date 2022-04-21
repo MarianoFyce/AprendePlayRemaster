@@ -24,9 +24,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".ui_especialistas.Mi_perfil"
+            android:exported="false" />
+        <activity
+            android:name=".abel.Esp_Reg"
+            android:exported="false" />
+        <activity
+            android:name=".abel.Version_Especialista"
+            android:exported="false" />
+        <activity
             android:name=".chat.ChatActivity"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".chat.adapter.UsersActivity"
             android:exported="false" />
