@@ -18,6 +18,7 @@ import com.example.aprende_play.chat.models.ChatMensaje;
 import com.example.aprende_play.databinding.ActivityChat2Binding;
 import com.example.aprende_play.network.ApiClient;
 import com.example.aprende_play.network.ApiService;
+import com.example.aprende_play.ui_padres.Precios;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -329,5 +330,10 @@ showToast(t.getMessage());
     protected void onResume() {
         super.onResume();
         listenAvailabilityOfReceiver();
+    }
+
+    public void mas_info(View view) {
+        Intent info = new Intent(ChatActivity.this, Precios.class);
+        startActivity(info);
     }
 }
