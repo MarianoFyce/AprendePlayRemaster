@@ -5,8 +5,6 @@ import java.util.HashMap;
 
 public class DatosTutores {
 
-
-    public static final String KEY_COLLECTION_ESPE= "especialistas";
     public static final String KEY_COLLECTION_USERS= "usuarios";
     public static final String KEY_NAME= "nombre";
     public static final String KEY_EMAIL= "correo";
@@ -23,8 +21,6 @@ public class DatosTutores {
     public static final String KEY_USER ="usern";
 
     public static final String KEY_COLLECTION_CHAT = "chat";
-    public static final String KEY_COLLECTION_CHAT2 = "chat2";
-
     public static final String KEY_SENDER_ID = "senderId";
     public static final String KEY_RECEIVER_ID = "receiverId";
     public static final String KEY_MENSAJE ="mensaje;";
@@ -50,7 +46,7 @@ public class DatosTutores {
             remoteMsgHeaders = new HashMap<>();
             remoteMsgHeaders.put(
                     REMOTE_MSG_AUTHORIZATION,
-                    "key=AAAACkn8vys:APA91bFhNMqvJzn2aR7G4XkgNUvvdXzNzrrFMoD4n28lijPXoGB5bNzwJHSxqFMDPHCyUb5fQ7ms5ixiK-_irLHinFpuN6kKZtRgc3jY6W89mNXON-lnXL3MIvIAdTx18ebPStBaq2v0"
+                    "key=AAAACkn8vys:APA91bH8OsUJqFH_DOiyNI_86b2pS3Tx4HIdcxkt5ZKYzcj041z8Sk7C0ht1Ri-yAAiy1LUF1TucfjAhrTiBz8b54MtulpUuDmQa7zTAiJSRxfVxu97MlradVgQVD2yJ9TKIT9IClJK2"
             );
             remoteMsgHeaders.put(
                     REMOTE_MSG_CONTENT_TYPE,
