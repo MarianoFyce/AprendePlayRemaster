@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue"
-    tools:context=".Login">
+    android:background="@drawable/vec2"
+    tools:context=".chat.especialistas.Logespecial">
 
     <EditText
         android:id="@+id/correo"
@@ -21,7 +21,7 @@
         android:padding="5dp"
         android:paddingBottom="10dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/blue"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.559"
@@ -33,9 +33,12 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ACCESO PARA PADRES"
+        android:text="¡Bienvenidos!                               Consultores sobre el TEA"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:maxLines="2"
         android:background="@color/transparente"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +62,7 @@
         android:textSize="20dp"
         android:textStyle="normal"
         android:textColor="@color/white"
-        android:textColorHint="@color/blue"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.561"
@@ -71,11 +74,10 @@
         android:id="@+id/button"
         android:layout_width="366dp"
         android:layout_height="57dp"
-        android:background="@drawable/btn_fondo_color"
-        android:backgroundTint="@color/transparente"
+        android:background="@drawable/btn_fondo_color2"
         android:elevation="5dp"
         android:text="INICIAR SESIÓN"
-        android:textColor="#fff"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,8 +89,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Aún no tienes cuenta?"
-        android:textColor="@color/white"
+        android:text="¿Eres nuevo usuario?"
+        android:textColor="@color/indigo"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,16 +105,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:text="Registrate"
-        android:textColor="@color/white"
-        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:onClick="link"
+        android:textStyle="bold|normal"
+        android:text="Ingresa para ser parte de AprendePlay"
+        android:textColor="@color/indigo"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.945" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -120,10 +124,11 @@
         android:layout_height="170dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217"
-        app:srcCompat="@drawable/logi1" />
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/doc" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

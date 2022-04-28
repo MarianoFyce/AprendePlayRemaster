@@ -1,44 +1,44 @@
-package com.example.aprende_play.chat.adapter;
+package com.example.aprende_play.chat.especialistas;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.aprende_play.DatosTutores;
-import com.example.aprende_play.Login;
+import com.example.aprende_play.chat.adapter.UserAdapter;
+import com.example.aprende_play.chat.adapter.Userr;
 import com.example.aprende_play.chat.BaseActivity;
-import com.example.aprende_play.chat.ChatActivity;
 import com.example.aprende_play.chat.PreferenceManager;
 import com.example.aprende_play.chat.listeners.Userlisteners;
-import com.example.aprende_play.databinding.ActivityUsersBinding;
+import com.example.aprende_play.databinding.ActivityVistaClientesBinding;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
 //TODO
-public class UsersActivity extends BaseActivity implements Userlisteners {
-private ActivityUsersBinding binding;
-private PreferenceManager preferenceManager;
+public class VistaClientes extends BaseActivity implements Userlisteners {
+    private ActivityVistaClientesBinding binding;
+    private PreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityUsersBinding.inflate(getLayoutInflater());
+        binding = ActivityVistaClientesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         preferenceManager = new PreferenceManager(getApplicationContext());
         setListeners();
         getUsers();
 
     }
-private void setListeners(){
-     //   binding.imageback.setOnClickListener(v -> onBackPressed());
-}
+    private void setListeners(){
+        //   binding.imageback.setOnClickListener(v -> onBackPressed());
+    }
     private  void getUsers(){
 
         loading(true);
         FirebaseFirestore database = FirebaseFirestore.getInstance();
-        database.collection(DatosTutores.KEY_COLLECTION_ESPE)
+        database.collection(DatosTutores.KEY_COLLECTION_USERS)
                 .get()
                 .addOnCompleteListener(task -> {
                     loading(false);
@@ -57,11 +57,11 @@ private void setListeners(){
 
                             userr1.token= queryDocumentSnapshot.getString(DatosTutores.KEY_FCM_TOKEN);
                             userr1.id = queryDocumentSnapshot.getId();
-           //posiblerror
-users.add(userr1);
+                            //posiblerror
+                            users.add(userr1);
                         }
                         if (users.size() > 0){
-                           UserAdapter userAdapter = new UserAdapter(users, this);
+                            UserAdapter userAdapter = new UserAdapter(users, this);
                             binding.usersRecycler.setAdapter(userAdapter);
                             binding.usersRecycler.setVisibility(View.VISIBLE);
 
@@ -88,14 +88,14 @@ users.add(userr1);
 
     @Override
     public void onUserClicked(Userr userr) {
-        Intent intent  = new Intent(getApplicationContext(), ChatActivity.class);
+        Intent intent  = new Intent(getApplicationContext(), ChatActivityEspe.class);
         intent.putExtra(DatosTutores.KEY_USER,userr);
         startActivity(intent);
         finish();
     }
 
     public void sig(View view) {
-        Intent pasa = new Intent(UsersActivity.this, Login.class);
+        Intent pasa = new Intent(VistaClientes.this, Logespecial.class);
         startActivity(pasa);
     }
 }
