@@ -127,7 +127,7 @@ public class ActivityVistaEspe extends BaseActivity implements ConversionListene
 
     private void getToken(){
         FirebaseMessaging.getInstance().getToken().addOnSuccessListener(this::updateToken);
-
+//
     }
     private  void updateToken(String token){
         preferenceManager.putString(DatosTutores.KEY_FCM_TOKEN,token);
