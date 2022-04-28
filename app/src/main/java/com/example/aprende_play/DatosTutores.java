@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 public class DatosTutores {
 
+
+    public static final String KEY_COLLECTION_ESPE= "especialistas";
     public static final String KEY_COLLECTION_USERS= "usuarios";
     public static final String KEY_NAME= "nombre";
     public static final String KEY_EMAIL= "correo";
@@ -21,6 +23,8 @@ public class DatosTutores {
     public static final String KEY_USER ="usern";
 
     public static final String KEY_COLLECTION_CHAT = "chat";
+    public static final String KEY_COLLECTION_CHAT2 = "chat2";
+
     public static final String KEY_SENDER_ID = "senderId";
     public static final String KEY_RECEIVER_ID = "receiverId";
     public static final String KEY_MENSAJE ="mensaje;";
