@@ -3,14 +3,12 @@ package com.example.aprende_play;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.aprende_play.chat.ActivityVista;
 import com.example.aprende_play.chat.PreferenceManager;
-import com.example.aprende_play.chat.especialistas.Logespecial;
 import com.example.aprende_play.databinding.ActivityLoginBinding;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -78,8 +76,5 @@ public class Login extends AppCompatActivity {
             return true;
         }
     }
-    public void linked(View view) {
-        Intent c = new Intent(this, Logespecial.class);
-        startActivity(c);
-    }
+
 }
