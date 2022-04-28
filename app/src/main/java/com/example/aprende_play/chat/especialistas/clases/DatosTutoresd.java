@@ -1,9 +1,9 @@
-package com.example.aprende_play;
+package com.example.aprende_play.chat.especialistas.clases;
 
 
 import java.util.HashMap;
 
-public class DatosTutores {
+public class DatosTutoresd {
 
 
     public static final String KEY_COLLECTION_ESPE= "especialistas";
@@ -23,8 +23,6 @@ public class DatosTutores {
     public static final String KEY_USER ="usern";
 
     public static final String KEY_COLLECTION_CHAT = "chat";
-    public static final String KEY_COLLECTION_CHAT2 = "chat2";
-
     public static final String KEY_SENDER_ID = "senderId";
     public static final String KEY_RECEIVER_ID = "receiverId";
     public static final String KEY_MENSAJE ="mensaje;";
@@ -50,7 +48,7 @@ public class DatosTutores {
             remoteMsgHeaders = new HashMap<>();
             remoteMsgHeaders.put(
                     REMOTE_MSG_AUTHORIZATION,
-                    "key=AAAACkn8vys:APA91bH8OsUJqFH_DOiyNI_86b2pS3Tx4HIdcxkt5ZKYzcj041z8Sk7C0ht1Ri-yAAiy1LUF1TucfjAhrTiBz8b54MtulpUuDmQa7zTAiJSRxfVxu97MlradVgQVD2yJ9TKIT9IClJK2"
+                    "key=AAAACkn8vys:APA91bEl24G-P2wgksBgAa1vlfHHDHMAKov6USigfaqg8-tGhTK1QxpovUxM7oIt1QMZy6QM9agudgHxePbTNt83WZJ8-ePUAPPi_PBSIGhmDzn8386xMX-GGLR1xQn_OpN63r-gtbzX"
             );
             remoteMsgHeaders.put(
                     REMOTE_MSG_CONTENT_TYPE,

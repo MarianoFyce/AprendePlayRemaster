@@ -1,4 +1,4 @@
-package com.example.aprende_play.chat;
+package com.example.aprende_play.chat.especialistas;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,11 +11,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.aprende_play.DatosTutores;
+import com.example.aprende_play.chat.BaseActivityCopia;
+import com.example.aprende_play.chat.PreferenceManager;
 import com.example.aprende_play.chat.adapter.ChatAdapter;
 import com.example.aprende_play.chat.adapter.Userr;
-import com.example.aprende_play.chat.adapter.UsersActivity;
 import com.example.aprende_play.chat.models.ChatMensaje;
-import com.example.aprende_play.databinding.ActivityChat2Binding;
+import com.example.aprende_play.databinding.ActivityChatEspeBinding;
 import com.example.aprende_play.network.ApiClient;
 import com.example.aprende_play.network.ApiService;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -40,9 +41,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ChatActivity extends BaseActivity{
+public class ChatActivityEspe extends BaseActivityCopia {
 
-    private ActivityChat2Binding binding;
+    private ActivityChatEspeBinding binding;
     private Userr receiverUser;
     private List<ChatMensaje> chatMensajes;
     private ChatAdapter chatAdapter;
@@ -54,10 +55,10 @@ public class ChatActivity extends BaseActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityChat2Binding.inflate(getLayoutInflater());
+        binding = ActivityChatEspeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setListeners();
-         loadReceivedDeatil();
+        loadReceivedDeatil();
         init();
         listenMensajes();
     }
@@ -123,54 +124,54 @@ public class ChatActivity extends BaseActivity{
         binding.inputMensaje.setText(null);
     }
 
-private void  showToast(String mensaje){
-    Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_SHORT).show();
+    private void  showToast(String mensaje){
+        Toast.makeText(getApplicationContext(), mensaje, Toast.LENGTH_SHORT).show();
 
-}
-private void sendNotification(String mensajeBody){
-    datamensaje = FirebaseMessaging.getInstance();
-
-    ApiClient.getClient().create(ApiService.class).sendMensaje(
-            DatosTutores.getRemoteMsgHeaders(),
-            mensajeBody
-    ).enqueue(new Callback<String>() {
-        @Override
-        public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response) {
-
-if (response.isSuccessful()){
-    try {
-        if (response.body() != null){
-            JSONObject responseJson = new JSONObject(response.body());
-            JSONArray results = responseJson.getJSONArray("result");
-            if (responseJson.getInt("Fallo") == 1) {
-                JSONObject error = (JSONObject) results.get(0);
-                showToast(error.getString("error"));
-                return;
-            }
-        }
-    }catch (JSONException e){
-        e.printStackTrace();
     }
-    showToast("Notificación enviada");
-}else {
-    showToast("Error" + response.code());
-}
-        }
+    private void sendNotification(String mensajeBody){
+        datamensaje = FirebaseMessaging.getInstance();
 
-        @Override
-        public void onFailure(@NonNull Call<String> call, @NonNull Throwable t) {
-showToast(t.getMessage());
-        }
-    });
-}
+        ApiClient.getClient().create(ApiService.class).sendMensaje(
+                DatosTutores.getRemoteMsgHeaders(),
+                mensajeBody
+        ).enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response) {
+
+                if (response.isSuccessful()){
+                    try {
+                        if (response.body() != null){
+                            JSONObject responseJson = new JSONObject(response.body());
+                            JSONArray results = responseJson.getJSONArray("result");
+                            if (responseJson.getInt("Fallo") == 1) {
+                                JSONObject error = (JSONObject) results.get(0);
+                                showToast(error.getString("error"));
+                                return;
+                            }
+                        }
+                    }catch (JSONException e){
+                        e.printStackTrace();
+                    }
+                    showToast("Notificación enviada");
+                }else {
+                    showToast("Error" + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<String> call, @NonNull Throwable t) {
+                showToast(t.getMessage());
+            }
+        });
+    }
 
 
     private void listenAvailabilityOfReceiver(){
         datamensaje = FirebaseMessaging.getInstance();
 
-        database.collection(DatosTutores.KEY_COLLECTION_ESPE).document(
+        database.collection(DatosTutores.KEY_COLLECTION_USERS).document(
                 receiverUser.id
-        ).addSnapshotListener(ChatActivity.this,(value,error) -> {
+        ).addSnapshotListener(ChatActivityEspe.this,(value, error) -> {
             if (error != null){
                 return;
             }
@@ -271,7 +272,7 @@ showToast(t.getMessage());
     }
 
     public void pasars(View view) {
-        Intent pasa = new Intent(ChatActivity.this, UsersActivity.class);
+        Intent pasa = new Intent(ChatActivityEspe.this, VistaClientes.class);
         startActivity(pasa);
     }
     /*

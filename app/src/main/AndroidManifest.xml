@@ -24,9 +24,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".chat.especialistas.ActivityVistaEspe"
+            android:exported="false" />
+        <activity
+            android:name=".chat.especialistas.ChatActivityEspe"
+            android:exported="false" />
+        <activity
+            android:name=".chat.especialistas.VistaClientes"
+            android:exported="false" />
+        <activity
+            android:name=".chat.especialistas.RegistraEspecialista"
+            android:exported="false" />
+        <activity
+            android:name=".chat.especialistas.ValidaCedula"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:type="linear" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chat.especialistas.Logespecial"
+            android:exported="false" />
+        <activity
             android:name=".chat.ChatActivity"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".chat.adapter.UsersActivity"
             android:exported="false" />
