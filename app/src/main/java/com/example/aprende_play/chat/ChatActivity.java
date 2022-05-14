@@ -96,7 +96,7 @@ public class ChatActivity extends BaseActivity{
             //conversion.put(DatosTutores.KEY_RECEIVER_IMAGE,receiverUser.image);
             //conversion.put(DatosTutores.KEY_LAST_MENSAJE,binding.inputMensaje.getText().toString());
             //conversion.put(DatosTutores.KEY_TIMESTAMP,new Date());
-            //addConversion(conversion);
+
 
 
         }*/
