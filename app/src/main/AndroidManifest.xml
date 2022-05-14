@@ -65,12 +65,7 @@
         <activity
             android:name=".chat.ActivityVista"
             android:exported="false" />
-        <activity
-            android:name=".chat.Lista_Especialistas"
-            android:exported="false" />
-        <activity
-            android:name=".chat.Logchat"
-            android:exported="false" />
+
         <activity
             android:name=".pays.CheckoutActivity"
             android:exported="false" />
