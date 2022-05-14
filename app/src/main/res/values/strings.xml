@@ -25,4 +25,7 @@
     <string name="nom">Minerva gutierrez</string>
     <string name="amabilidad">Mi niño se siente mucho mas tranquilo ahora</string>
     <string name="Titulo_especialista">Dra. Leticia de Paredes</string>
+    <string name="direccion">Esta es la direccion: Avenida la fragua, #408, esquina Mina. Veracruz</string>
+    <string name="link">Ver direccion en el mapa</string>
+    <string name="motivo">Motivo de la visita</string>
 </resources>

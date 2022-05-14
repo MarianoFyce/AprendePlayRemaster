@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.aprende_play.DatosTutores;
+import com.example.aprende_play.Generador_citas.Nueva_cita;
 import com.example.aprende_play.chat.adapter.ChatAdapter;
 import com.example.aprende_play.chat.adapter.Userr;
 import com.example.aprende_play.chat.adapter.UsersActivity;
@@ -333,4 +334,8 @@ showToast(t.getMessage());
     }
 
 
+    public void mas_info(View view) {
+        Intent c = new Intent(ChatActivity.this, Nueva_cita.class);
+        startActivity(c);
+    }
 }

@@ -24,6 +24,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".Generador_citas.Nueva_cita"
+            android:exported="false" />
+        <activity
             android:name=".chat.especialistas.ActivityVistaEspe"
             android:exported="false" />
         <activity
@@ -65,7 +68,6 @@
         <activity
             android:name=".chat.ActivityVista"
             android:exported="false" />
-
         <activity
             android:name=".pays.CheckoutActivity"
             android:exported="false" />
