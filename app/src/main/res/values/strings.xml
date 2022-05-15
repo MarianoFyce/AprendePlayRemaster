@@ -28,4 +28,6 @@
     <string name="direccion">Esta es la direccion: Avenida la fragua, #408, esquina Mina. Veracruz</string>
     <string name="link">Ver direccion en el mapa</string>
     <string name="motivo">Motivo de la visita</string>
+    <string name="horas">Selecciona la hora</string>
+    <string name="costo">costo: $800</string>
 </resources>

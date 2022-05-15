@@ -58,6 +58,7 @@
         app:tint="@color/white">
 
     </androidx.appcompat.widget.AppCompatImageView>
+
     <TextView
         android:id="@+id/textname"
         android:layout_width="0dp"
@@ -67,7 +68,7 @@
         android:ellipsize="end"
         android:gravity="center"
         android:text="Chat"
-android:maxLines="1"
+        android:maxLines="1"
         android:textColor="@color/white"
         android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
