@@ -52,7 +52,7 @@
         android:layout_marginEnd="@dimen/_16sdp"
         android:onClick="mas_info"
         android:padding="@dimen/_4sdp"
-        android:src="@drawable/ic_info"
+        android:src="@drawable/online_appointment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/white">

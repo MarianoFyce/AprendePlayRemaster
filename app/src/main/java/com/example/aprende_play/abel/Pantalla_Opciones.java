@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.aprende_play.R;
+import com.example.aprende_play.chat.ActivityVista;
 import com.example.aprende_play.info_covid;
 
 public class Pantalla_Opciones extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class Pantalla_Opciones extends AppCompatActivity {
     }
 
     public void chat(View view) {
-        Intent i = new Intent(this, Chat_Activity.class);
+        Intent i = new Intent(this, ActivityVista.class);
         startActivity(i);
     }
 

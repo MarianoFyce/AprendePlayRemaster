@@ -94,8 +94,4 @@ public class VistaClientes extends BaseActivity implements Userlisteners {
         finish();
     }
 
-    public void sig(View view) {
-        Intent pasa = new Intent(VistaClientes.this, Logespecial.class);
-        startActivity(pasa);
-    }
 }

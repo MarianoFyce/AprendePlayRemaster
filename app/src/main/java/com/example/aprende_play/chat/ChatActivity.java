@@ -53,13 +53,15 @@ public class ChatActivity extends BaseActivity{
     private FirebaseMessaging datamensaje;
     private String conversationId = null;
     private Boolean isReceiverAvailable = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         binding = ActivityChat2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setListeners();
-         loadReceivedDeatil();
+        loadReceivedDeatil();
         init();
         listenMensajes();
     }

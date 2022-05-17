@@ -156,6 +156,7 @@
         <entry key="..\:/Users/Zavaleta/Downloads/Compressed/Aprende_Play_2/Aprende_Play/app/src/main/res/layout/juego.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/drawable/backgraound_chat_input.xml" value="0.1025" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/drawable/background_content_top.xml" value="0.1025" />
+        <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/drawable/spinner_background.xml" value="0.1015" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_chat.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_chat2.xml" value="0.264" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_chat_espe.xml" value="0.1" />
@@ -166,9 +167,11 @@
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_main2.xml" value="0.1" />
-        <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_nueva_cita.xml" value="0.1" />
+        <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_nueva_cita.xml" value="0.144" />
+        <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_pantalla_opciones.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_users.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_valida_cedula.xml" value="0.1" />
+        <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_vista.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_vista_clientes.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/activity_vista_espe.xml" value="0.1" />
         <entry key="..\:/Users/msafu/AndroidStudioProjects/AprendePlayRemaster2/app/src/main/res/layout/item_container_usuarios.xml" value="0.1" />

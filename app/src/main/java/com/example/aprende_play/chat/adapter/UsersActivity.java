@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.aprende_play.DatosTutores;
+import com.example.aprende_play.Generador_citas.Nueva_cita;
 import com.example.aprende_play.Login;
 import com.example.aprende_play.chat.BaseActivity;
 import com.example.aprende_play.chat.ChatActivity;
@@ -13,6 +14,7 @@ import com.example.aprende_play.chat.listeners.Userlisteners;
 import com.example.aprende_play.databinding.ActivityUsersBinding;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.auth.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -94,8 +96,17 @@ users.add(userr1);
         finish();
     }
 
+  
+
+
+
     public void sig(View view) {
         Intent pasa = new Intent(UsersActivity.this, Login.class);
         startActivity(pasa);
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
     }
 }

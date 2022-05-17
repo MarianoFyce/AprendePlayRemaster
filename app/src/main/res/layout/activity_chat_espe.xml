@@ -53,7 +53,7 @@
         android:layout_marginTop="@dimen/_12sdp"
         android:layout_marginRight="@dimen/_16sdp"
         android:padding="@dimen/_4sdp"
-        android:src="@drawable/ic_info"
+        android:src="@drawable/user_appoint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

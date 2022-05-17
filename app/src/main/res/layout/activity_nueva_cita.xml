@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gut"
     android:id="@+id/rel"
+    android:padding="10dp"
     tools:context=".Generador_citas.Nueva_cita">
 
 
@@ -24,10 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="43sp"
+        android:text="Citas"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="Chat">
+        android:textSize="43sp"
+        android:textStyle="bold">
 
     </TextView>
 
@@ -57,6 +58,7 @@
             <TextView
                 android:id="@+id/tv_link_maps"
                 android:background="#253362"
+                android:onClick="maps"
                 android:textColor="@color/white"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
@@ -93,11 +95,17 @@
                 android:layout_height="wrap_content" />
 
             <Spinner
+                android:layout_marginTop="20dp"
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/horas"
-                android:minHeight="48dp" />
+                android:background="@drawable/spinner_background"
+                android:entries="@array/horas"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
 
             <TextView
                 android:layout_marginTop="10dp"
@@ -114,9 +122,9 @@
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/num"
-                tools:srcCompat="@drawable/num" />
+                android:layout_height="match_parent"
+                android:src="@drawable/tarjeta_pago"
+                tools:srcCompat="@drawable/tarjeta_pago" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -129,6 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="clickConf"
                     android:text="Confirmar cita?" />
 
                 <Button

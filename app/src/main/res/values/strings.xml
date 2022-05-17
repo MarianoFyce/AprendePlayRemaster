@@ -30,4 +30,16 @@
     <string name="motivo">Motivo de la visita</string>
     <string name="horas">Selecciona la hora</string>
     <string name="costo">costo: $800</string>
+
+    <string-array name="horas">
+        <item>Seleccione la hora:</item>
+        <item>9:10 am</item>
+        <item>10:20 am</item>
+        <item>11:15 am</item>
+        <item>12:10 pm</item>
+        <item>01:15 pm</item>
+        <item>4:10 pm</item>
+        <item>5:00 pm</item>
+    </string-array>
+
 </resources>
