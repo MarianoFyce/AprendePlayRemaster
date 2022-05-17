@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.aprende_play.DatosTutores;
+import com.example.aprende_play.Generador_citas.Registro_citas;
 import com.example.aprende_play.chat.BaseActivityCopia;
 import com.example.aprende_play.chat.PreferenceManager;
 import com.example.aprende_play.chat.adapter.ChatAdapter;
@@ -331,4 +332,11 @@ public class ChatActivityEspe extends BaseActivityCopia {
         super.onResume();
         listenAvailabilityOfReceiver();
     }
+
+    public void new_cita(View view) {
+        Intent ct = new Intent(ChatActivityEspe.this, Registro_citas.class);
+        startActivity(ct);
+    }
+
+
 }

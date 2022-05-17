@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gut"
+    android:padding="10dp"
+    tools:context=".Generador_citas.Registro_citas">
+
+
+    <View
+        android:id="@+id/headerBacgr"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#03A9F4"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nuevas Citas"
+        android:textColor="@color/white"
+        android:textSize="43sp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardBackgroundColor="#314B7C"
+            app:cardCornerRadius="20sp">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/user_appoint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="111dp"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Tiene una nueva cita" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingTop="@dimen/_20sdp"
+                android:layout_marginLeft="111dp"
+                android:text="Motivo de la visita: Autismo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingTop="@dimen/_40sdp"
+                android:layout_marginLeft="111dp"
+                android:text="Fecha: 19/Mayo/2022" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingTop="@dimen/_60sdp"
+                android:layout_marginLeft="111dp"
+                android:text="Hora: 09:10am" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

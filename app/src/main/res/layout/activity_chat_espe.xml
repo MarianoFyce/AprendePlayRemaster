@@ -54,6 +54,7 @@
         android:layout_marginRight="@dimen/_16sdp"
         android:padding="@dimen/_4sdp"
         android:src="@drawable/user_appoint"
+        android:onClick="new_cita"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
