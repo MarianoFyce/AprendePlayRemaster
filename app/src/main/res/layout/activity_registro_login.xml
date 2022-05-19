@@ -137,7 +137,7 @@
         android:layout_marginHorizontal="60dp"
         android:gravity="center"
         android:background="@color/transparente"
-        android:hint="Descripción breve"
+        android:hint="Parentesco"
         android:imeOptions="actionNext"
         android:inputType="text"
         android:maxLength="50"

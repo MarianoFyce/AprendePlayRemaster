@@ -1,18 +1,13 @@
 package com.example.aprende_play;
-import java.math.BigDecimal;
-
-import org.json.JSONException;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
+
 import com.paypal.android.sdk.payments.PayPalAuthorization;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalFuturePaymentActivity;
@@ -21,13 +16,17 @@ import com.paypal.android.sdk.payments.PayPalService;
 import com.paypal.android.sdk.payments.PaymentActivity;
 import com.paypal.android.sdk.payments.PaymentConfirmation;
 
+import org.json.JSONException;
+
+import java.math.BigDecimal;
+
 public class PayPremium extends Activity {
 
     public static final String TAG = "Payment exmaple";
     public static final String PAYPAL_KEY = "AesEiVBEJvXAbQqVP96sTO9onJJ5qSF5m_tcbmDFVIS6tGb3tBQZqK72P6h5y_wuPKMGuDNuaGHGJEb2";
     private static final int REQUEST_CODE_PAYMENT = 1;
     private static final int REQUEST_CODE_FUTURE_PAYMENT = 2;
-    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_PRODUCTION;
+    private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_NO_NETWORK;
     //PayPalPayment getThingToBuy;
     private static PayPalConfiguration config;
     //= new PayPalConfiguration()

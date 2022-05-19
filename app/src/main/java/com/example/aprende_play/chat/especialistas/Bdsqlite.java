@@ -22,8 +22,6 @@ public class Bdsqlite extends SQLiteOpenHelper {
         /*Hacemos un insert para tener un valkor insertado como predeterminado*/
         db.execSQL("insert into userstable(clave_user) values('7991')");
     }
-
-
     /*Este metodo nos ayuda a administrar la versiones de la base de datos creada*/
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
