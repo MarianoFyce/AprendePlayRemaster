@@ -13,18 +13,17 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.aprende_play.Juegos;
 import com.example.aprende_play.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Juego extends AppCompatActivity implements View.OnClickListener {
+public class MemoramaNv1 extends AppCompatActivity implements View.OnClickListener {
 
     // variables para los componentes de la vista
-    ImageButton imb00, imb01, imb02, imb03, imb04, imb05, imb06, imb07, imb08, imb09, imb10, imb11, imb12, imb13, imb14, imb15;
-    
-    ImageButton[] tablero = new ImageButton[16];
+    ImageButton imb00, imb01, imb02, imb03, imb04, imb05, imb06,imb07,imb08,imb09,imb10,imb11;
+
+    ImageButton[] tablero = new ImageButton[12];
     Button botonReiniciar, botonSalir;
     TextView textoPuntuacion;
     MediaPlayer mp3;
@@ -45,11 +44,11 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.juego);
+        setContentView(R.layout.activity_memorama_nv1);
 
         init();
         mp3 = MediaPlayer.create(this,R.raw.aucero);
-       //imb00=(ImageButton) findViewById(R.id.boton00);
+        //imb00=(ImageButton) findViewById(R.id.boton00);
 
 
 
@@ -68,10 +67,8 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
         imb09 = findViewById(R.id.boton09);
         imb10 = findViewById(R.id.boton10);
         imb11 = findViewById(R.id.boton11);
-        imb12 = findViewById(R.id.boton12);
-        imb13 = findViewById(R.id.boton13);
-        imb14 = findViewById(R.id.boton14);
-        imb15 = findViewById(R.id.boton15);
+
+
 
         tablero[0] = imb00;
         tablero[1] = imb01;
@@ -85,10 +82,6 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
         tablero[9] = imb09;
         tablero[10] = imb10;
         tablero[11] = imb11;
-        tablero[12] = imb12;
-        tablero[13] = imb13;
-        tablero[14] = imb14;
-        tablero[15] = imb15;
     }
 
 
@@ -127,8 +120,6 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
                 R.drawable.la3,
                 R.drawable.la4,
                 R.drawable.la5,
-                R.drawable.la6,
-                R.drawable.la7
         };
         fondo = R.drawable.signo;
 
@@ -164,7 +155,7 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
                 puntuacion++;
                 textoPuntuacion.setText("Aciertos: " + aciertos);
                 if (aciertos == imagenes.length) {
-                    Intent intent = new Intent(Juego.this,EndMem.class);
+                    Intent intent = new Intent(MemoramaNv1.this, ActivityFinJuego.class);
                     startActivity(intent);
                 }
             } else {
@@ -228,8 +219,6 @@ public class Juego extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
         mp3.start();
     }
-    public void nv1(View view) {
-        Intent intent = new Intent(Juego.this, Juegos.class);
-        startActivity(intent);
-    }
+
+
 }

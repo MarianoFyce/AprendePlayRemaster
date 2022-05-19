@@ -136,7 +136,7 @@
             android:layout_marginHorizontal="60dp"
             android:gravity="center"
             android:background="@color/transparente"
-            android:hint="Especialidad"
+            android:hint="Años de experiencia"
             android:imeOptions="actionNext"
             android:inputType="text"
             android:maxLength="50"

@@ -8,7 +8,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.aprende_play.juegopaint.InicioJuego;
-import com.example.aprende_play.juegos.Juego;
 import com.example.aprende_play.pays.CheckoutActivity;
 
 public class Juegos extends AppCompatActivity {
@@ -26,7 +25,7 @@ public class Juegos extends AppCompatActivity {
 
 
     public void memo(View v){
-        Intent pasajuego = new Intent(Juegos.this, Juego.class);
+        Intent pasajuego = new Intent(Juegos.this, com.example.aprende_play.juegos.Instrucciones.class);
         startActivity(pasajuego);
     }
     public void jeugo3(View view) {
