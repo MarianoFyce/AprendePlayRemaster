@@ -24,6 +24,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".juegos.EndMem"
+            android:exported="false" />
+        <activity
+            android:name=".juegos.ActivityFinJuego"
+            android:exported="false" />
+        <activity
+            android:name=".juegos.Instrucciones"
+            android:exported="false" />
+        <activity
+            android:name=".juegos.MemoramaNv1"
+            android:exported="false" />
+        <activity
             android:name=".chat.especialistas.ActivityVistaEspe"
             android:exported="false" />
         <activity
