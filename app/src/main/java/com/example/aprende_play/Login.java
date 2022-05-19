@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
-//endvamos
+//endvamoss
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.aprende_play.abel.Pantalla_Opciones;
