@@ -63,26 +63,65 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/background_content_bottom"
+        android:padding="@dimen/_20sdp"
+        android:background="@drawable/gut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagenPerfil"
+
+
+
+
         >
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/conversationRecyclerView"
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipToPadding="false"
-            android:orientation="vertical"
-            android:overScrollMode="never"
-            android:padding="@dimen/_20sdp"
-            android:visibility="visible"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            />
-        <ProgressBar
-            android:id="@+id/progresbar2"
-            android:layout_width="@dimen/_25sdp"
-            android:layout_height="@dimen/_25sdp"
-            android:layout_gravity="center"/>
+            android:layout_height="100dp"
+            app:cardBackgroundColor="#253362"
+            app:cardCornerRadius="@dimen/_12sdp" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/user_appoint" />
+
+            <TextView
+
+                android:layout_marginLeft="122dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Tiene una nueva cita " />
+
+
+            <TextView
+           android:layout_marginTop="40dp"
+                android:layout_marginLeft="122dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Fecha: 20/Nov/2022" />
+
+
+
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="122dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Hora: 9:10 am" />
+
+
+
+        </androidx.cardview.widget.CardView>
     </FrameLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabnewchat"
