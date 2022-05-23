@@ -77,12 +77,7 @@
         <activity
             android:name=".chat.ActivityVista"
             android:exported="false" />
-        <activity
-            android:name=".chat.Lista_Especialistas"
-            android:exported="false" />
-        <activity
-            android:name=".chat.Logchat"
-            android:exported="false" />
+
         <activity
             android:name=".pays.CheckoutActivity"
             android:exported="false" />
@@ -235,6 +230,11 @@
         <activity
             android:name=".abel.DonarActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".abel.Generador_citas.Nueva_cita"
+            android:exported="true" />
+
         <activity
             android:name=".abel.Chat_Activity"
             android:exported="true" />
