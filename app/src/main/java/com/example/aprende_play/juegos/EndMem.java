@@ -21,7 +21,7 @@ public class EndMem extends AppCompatActivity {
     String appP = "2";
     String correoP = "Observaciones: Juego terminado";
     String passwordP = "24 puntos";
-
+//ff
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     @Override
