@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/fondoj"
+    android:layout_height="match_parent"
+    tools:context=".juegopaint.RegistroProgreso">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:hint="Nombre">
+
+        <EditText
+
+            android:id="@+id/txt_nombrePersona"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:background="@drawable/dibujab"
+            android:textColorHint="@color/white"
+            android:textColor="@color/transparente"
+            android:text="Dibuja el número"
+            android:gravity="center"
+            android:textSize="1dp"
+            android:inputType="textPersonName"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos">
+
+        <EditText
+            android:id="@+id/txt_appPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Etapa"
+            android:inputType="number"
+            android:paddingTop="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo">
+
+        <EditText
+            android:id="@+id/txt_correoPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Observaciones"
+            android:inputType="text"
+            android:paddingTop="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password">
+
+        <EditText
+            android:id="@+id/txt_passwordPersona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Número"
+            android:inputType="number"
+            android:paddingTop="15dp"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/etapanum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="35dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Registro de Avance"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lv_datosPersonas"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_200sdp" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="vas"
+        android:text="Agregar Progreso"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

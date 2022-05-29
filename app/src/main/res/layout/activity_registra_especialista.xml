@@ -37,10 +37,10 @@
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/imperfil"
             android:layout_width="wrap_content"
-            android:layout_height="129dp"
+            android:layout_height="109dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="145dp"
-            android:background="@drawable/doc"
+            android:background="@drawable/avatar"
             app:riv_oval="true">
 
         </com.makeramen.roundedimageview.RoundedImageView>
@@ -138,7 +138,7 @@
             android:background="@color/transparente"
             android:hint="Años de experiencia"
             android:imeOptions="actionNext"
-            android:inputType="text"
+            android:inputType="number"
             android:maxLength="50"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/background_light"
@@ -154,8 +154,8 @@
             android:background="@color/transparente"
             android:hint="Experiencias"
             android:imeOptions="actionNext"
-            android:inputType="number"
-            android:maxLength="10"
+            android:inputType="text"
+            android:maxLength="100"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/background_light"
             android:textSize="25sp"

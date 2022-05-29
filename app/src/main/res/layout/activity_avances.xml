@@ -16,7 +16,7 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="414dp"
-        android:layout_height="126dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -24,21 +24,45 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/barra" />
+    <EditText
 
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="288dp"
-        android:layout_height="317dp"
+        android:id="@+id/txt_nombrePersona"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/lavarmanos2" />
+        android:ems="10"
+        android:background="@drawable/dibujab"
+        android:textColorHint="@color/white"
+        android:textColor="@color/transparente"
+        android:text="Dibuja el número"
+        android:gravity="center"
+        android:textSize="1dp"
+        android:inputType="textPersonName"
 
-
-
+        />
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="match_parent"
-        android:layout_height="197dp"
-        app:srcCompat="@drawable/a" />
+        android:id="@+id/imageView6"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/etapanum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Registro de Avance"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:background="@color/white"
+        android:id="@+id/lv_datosPersonas"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/_260sdp" />
+
+
 </LinearLayout>
 </RelativeLayout>

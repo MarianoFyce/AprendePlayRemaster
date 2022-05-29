@@ -1,25 +1,42 @@
 package com.example.aprende_play.juegopaint;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.aprende_play.R;
 
 public class InicioJuego extends AppCompatActivity {
     MediaPlayer mp3;
+    Button rp;
     //edit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_juego);
+
+        rp = (Button) findViewById(R.id.imageButton5);
         mp3 = MediaPlayer.create(this,R.raw.auwelcome);
-        mp3.start();
+        rp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mp3.isPlaying()){
+                    mp3.pause();
+                    rp.setBackgroundResource(R.drawable.paisee);
+                    Toast.makeText(InicioJuego.this,"Pausa",Toast.LENGTH_SHORT).show();
+                }else{
+                    mp3.start();
+                    rp.setBackgroundResource(R.drawable.sonidos);
+                    Toast.makeText(InicioJuego.this,"Reproduciendo",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
         //new Handler().postDelayed(new Runnable() {
         //@Override
         //public void run() {
@@ -27,6 +44,10 @@ public class InicioJuego extends AppCompatActivity {
         //    startActivity(intent);
         //  }
         //},2000);
+    }
+    public void destruir() {
+        if (mp3 != null)
+            mp3.release();
     }
     public void vamos(View view) {
         Intent intent = new Intent(InicioJuego.this , A_0_Teach.class);

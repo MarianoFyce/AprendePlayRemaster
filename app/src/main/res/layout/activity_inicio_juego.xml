@@ -25,11 +25,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963" />
 
+
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="410dp"
         android:layout_height="438dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="108dp"
         app:layout_constraintBottom_toBottomOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,7 +38,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.468"
         app:srcCompat="@drawable/maestra1" />
-
 
     <ImageView
         android:id="@+id/imageView14"
@@ -53,16 +53,16 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="291dp"
-        android:layout_height="144dp"
+        android:layout_width="404dp"
+        android:layout_height="140dp"
         android:background="@drawable/jugarn2"
         android:onClick="vamos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintVertical_bias="0.699" />
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/menu"
@@ -91,6 +91,7 @@
             app:fab_title="Nueve"
 
             tools:ignore="MissingConstraints" />
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/accion_favorito8"
             android:layout_width="match_parent"
@@ -101,6 +102,7 @@
             app:fab_title="Ocho"
 
             tools:ignore="MissingConstraints" />
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/accion_favorito7"
             android:layout_width="match_parent"
@@ -122,6 +124,7 @@
             app:fab_title="Seis"
 
             tools:ignore="MissingConstraints" />
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/accion_favorito5"
             android:layout_width="match_parent"
@@ -132,6 +135,7 @@
             app:fab_title="Cinco"
 
             tools:ignore="MissingConstraints" />
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/accion_favorito4"
             android:layout_width="match_parent"
@@ -142,16 +146,18 @@
             app:fab_title="Cuatro"
 
             tools:ignore="MissingConstraints" />
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/accion_favorito3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="t3"
             app:fabSize="normal"
-            app:fab_icon="@drawable/dospng"
+            app:fab_icon="@drawable/trespng"
             app:fab_title="Tres"
 
             tools:ignore="MissingConstraints" />
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/accion_favorito2"
             android:layout_width="match_parent"
@@ -162,6 +168,7 @@
             app:fab_title="Dos"
 
             tools:ignore="MissingConstraints" />
+
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/accion_favorito1"
             android:layout_width="match_parent"
@@ -172,7 +179,20 @@
             app:fab_title="Uno"
 
             tools:ignore="MissingConstraints" />
+
+
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
+    <Button
+        android:id="@+id/imageButton5"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
 
+        android:background="@drawable/sonidos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

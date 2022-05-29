@@ -24,6 +24,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".juegopaint.RegistroProgreso"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".juegos.EndMem"
             android:exported="false" />
         <activity
@@ -77,7 +81,6 @@
         <activity
             android:name=".chat.ActivityVista"
             android:exported="false" />
-
         <activity
             android:name=".pays.CheckoutActivity"
             android:exported="false" />
@@ -230,11 +233,9 @@
         <activity
             android:name=".abel.DonarActivity"
             android:exported="true" />
-
         <activity
             android:name=".abel.Generador_citas.Nueva_cita"
             android:exported="true" />
-
         <activity
             android:name=".abel.Chat_Activity"
             android:exported="true" />
