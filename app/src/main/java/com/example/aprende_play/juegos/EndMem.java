@@ -15,7 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.UUID;
-//
+//f
 public class EndMem extends AppCompatActivity {
     String nomP = " Memorama ";
     String appP = "2";
