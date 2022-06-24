@@ -36,7 +36,7 @@
         tools:ignore="MissingConstraints" />
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
+        android:id="@+id/fabnewchat"
         android:layout_width="304dp"
         android:layout_height="252dp"
         android:layout_alignParentStart="true"
@@ -58,6 +58,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

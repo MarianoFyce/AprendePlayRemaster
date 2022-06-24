@@ -24,9 +24,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".Registrarninos"
+            android:exported="false" />
+        <activity
+            android:name=".Verninos"
+            android:exported="false" />
+        <activity
             android:name=".juegopaint.RegistroProgreso"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".juegos.EndMem"
             android:exported="false" />
