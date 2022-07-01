@@ -8,9 +8,6 @@ public class DatosTutores {
 
     public static final String KEY_COLLECTION_ESPE= "especialistas";
     public static final String KEY_COLLECTION_USERS= "usuarios";
-    public static final String KEY_COLLECTION_NINOSS= "ninoss";
-
-
     public static final String KEY_NAME= "nombre";
     public static final String KEY_EMAIL= "correo";
     public static final String KEY_PASSWORD= "contraseña";
