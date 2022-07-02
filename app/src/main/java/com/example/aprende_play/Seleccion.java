@@ -13,16 +13,11 @@ import com.example.aprende_play.chat.PreferenceManager;
 import com.example.aprende_play.chat.adapter.RecentConversationAdapter;
 import com.example.aprende_play.chat.adapter.Userr;
 import com.example.aprende_play.chat.listeners.ConversionListener;
-import com.example.aprende_play.chat.models.ChatMensaje;
 import com.example.aprende_play.databinding.ActivitySeleccionBinding;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.messaging.FirebaseMessaging;
-
-import java.util.HashMap;
-import java.util.List;
-
+//funcionaapp
 public class Seleccion extends BaseActivity implements ConversionListener {
     private ActivitySeleccionBinding binding;
     private PreferenceManager preferenceManager;
@@ -42,9 +37,10 @@ public class Seleccion extends BaseActivity implements ConversionListener {
         setListeners();
         //listenConversations();
     }
+
     private void setListeners(){
-        binding.fabnewchat.setOnClickListener(v ->
-                startActivity(new Intent(getApplicationContext(), Verninos.class)));
+        binding.gifImageView.setOnClickListener(v ->
+                startActivity(new Intent(getApplicationContext(), Verninoss.class)));
     }
     private void loadUserDet(){
         byte[] bytes = Base64.decode(preferenceManager.getString(DatosTutores.KEY_IMAGE),Base64.DEFAULT);
@@ -52,7 +48,7 @@ public class Seleccion extends BaseActivity implements ConversionListener {
 
     }
     private void  showToast(String message){
-        Toast.makeText(getApplicationContext(),message,Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
     }
     private void getToken(){
         FirebaseMessaging.getInstance().getToken().addOnSuccessListener(this::updateToken);
@@ -71,24 +67,6 @@ public class Seleccion extends BaseActivity implements ConversionListener {
                 .addOnFailureListener(e -> showToast("No disponible actualización"));
 
     }
-    private void  signOut(){
-        showToast("Espere...");
-        FirebaseFirestore database = FirebaseFirestore.getInstance();
-        DocumentReference documentReference =
-                database.collection(DatosTutores.KEY_COLLECTION_NINOSS).document(
-                        preferenceManager.getString(DatosTutores.KEY_USER_ID)
-                );
-        HashMap<String, Object>updates = new HashMap<>();
-        updates.put(DatosTutores.KEY_FCM_TOKEN, FieldValue.delete());
-        documentReference.update(updates)
-                .addOnSuccessListener(unused -> {
-                    preferenceManager.clear();
-                    startActivity(new Intent(getApplicationContext(), Verninos.class));
-                    finish();
-                })
-                .addOnFailureListener(e -> showToast("No disponible"));
-    }
-
     @Override
     public void onConversionClicked(Userr userr) {
         Intent intent = new Intent(getApplicationContext(),Verninoss.class);
@@ -96,8 +74,14 @@ public class Seleccion extends BaseActivity implements ConversionListener {
         startActivity(intent);
     }
 
-    public void pasa(View view) {
-        Intent i = new Intent(Seleccion.this, Login.class);
-        startActivity(i);
+        public void pasa(View view) {
+            Intent pasa = new Intent(Seleccion.this, Login.class);
+            startActivity(pasa);
+        }
+
+        public void pasajuego(View view) {
+            Intent pasajuego = new Intent(Seleccion.this, Juegos.class);
+            startActivity(pasajuego);
+
     }
 }

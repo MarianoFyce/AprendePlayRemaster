@@ -30,7 +30,7 @@
             android:name=".Registrarninos2"
             android:exported="false" />
         <activity
-            android:name=".Verninos"
+            android:name=".Verninoss"
             android:exported="false" />
         <activity
             android:name=".juegopaint.RegistroProgreso"
