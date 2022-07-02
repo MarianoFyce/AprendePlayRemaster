@@ -1,23 +1,85 @@
 package com.example.aprende_play.abel;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.View;
+import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.aprende_play.R;
+import com.example.aprende_play.DatosTutores;
+import com.example.aprende_play.Verprogreso;
 import com.example.aprende_play.chat.ActivityVista;
+import com.example.aprende_play.chat.BaseActivity;
+import com.example.aprende_play.chat.PreferenceManager;
+import com.example.aprende_play.chat.adapter.RecentConversationAdapter;
+import com.example.aprende_play.chat.adapter.Userr;
+import com.example.aprende_play.chat.listeners.ConversionListener;
+import com.example.aprende_play.databinding.ActivityPantallaOpcionesBinding;
 import com.example.aprende_play.info_covid;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.messaging.FirebaseMessaging;
 
-public class Pantalla_Opciones extends AppCompatActivity {
+public class Pantalla_Opciones extends BaseActivity implements ConversionListener {
+    private ActivityPantallaOpcionesBinding binding;
+    private PreferenceManager preferenceManager;
+    private RecentConversationAdapter recentConversationAdapter;
+    private FirebaseFirestore database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla_opciones);
+        binding = ActivityPantallaOpcionesBinding.inflate(getLayoutInflater());
+
+        setContentView(binding.getRoot());
+        preferenceManager = new PreferenceManager(getApplicationContext());
+        //init();
+        loadUserDet();
+        getToken();
+        setListeners();
+        //listenConversations();
+    }
+
+
+    private void setListeners(){
+        binding.btnNotificacion.setOnClickListener(v ->
+                startActivity(new Intent(getApplicationContext(), Verprogreso.class)));
+    }
+    private void loadUserDet(){
+        byte[] bytes = Base64.decode(preferenceManager.getString(DatosTutores.KEY_IMAGE),Base64.DEFAULT);
+        Bitmap bitmap = BitmapFactory.decodeByteArray(bytes,0,bytes.length);
 
     }
+    private void  showToast(String message){
+        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
+    }
+    private void getToken(){
+        FirebaseMessaging.getInstance().getToken().addOnSuccessListener(this::updateToken);
+
+    }
+    private  void updateToken(String token){
+        preferenceManager.putString(DatosTutores.KEY_FCM_TOKEN,token);
+
+        FirebaseFirestore database = FirebaseFirestore.getInstance();
+        DocumentReference documentReference =
+                database.collection(DatosTutores.KEY_COLLECTION_NINOS2).document(
+                        preferenceManager.getString(DatosTutores.KEY_USER_ID)
+                );
+        documentReference.update(DatosTutores.KEY_FCM_TOKEN,token)
+                //.addOnSuccessListener(unused -> showToast("Token actualizado"))
+                .addOnFailureListener(e -> showToast("No disponible actualización"));
+
+    }
+    @Override
+    public void onConversionClicked(Userr userr) {
+        Intent intent = new Intent(getApplicationContext(),Verprogreso.class);
+        intent.putExtra(DatosTutores.KEY_USER_ID,userr);
+        startActivity(intent);
+    }
+
 
     public void preg(View view) {
         Intent e = new Intent(this, Preguntas.class);
@@ -36,23 +98,11 @@ public class Pantalla_Opciones extends AppCompatActivity {
 
 
 
-    public void notify(View view) {
-        Intent d = new Intent(this, Notificaciones.class);
-        startActivity(d);
-    }
+
 
     public void covid(View view) {
         Intent s = new Intent(this, info_covid.class);
         startActivity(s);
     }
 
-
-
-    public void Onclick(View view) {
-        switch (view.getId()){
-            case R.id.btnNotificacion:
-            startActivity(new Intent(this, Notificaciones.class));
-            break;
-        }
-    }
 }

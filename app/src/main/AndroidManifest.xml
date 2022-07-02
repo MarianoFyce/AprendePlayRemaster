@@ -24,7 +24,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".Registrarninos"
+            android:name=".Verprogreso"
+            android:exported="false" />
+        <activity
+            android:name=".Registrarninos2"
             android:exported="false" />
         <activity
             android:name=".Verninos"

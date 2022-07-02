@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondoj"
+    tools:context=".Registrarninos2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <TextView
+            android:layout_marginVertical="100dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="1dp"
+            android:layout_marginHorizontal="40dp"
+            android:gravity="center_horizontal"
+            android:text="Registrate"
+            android:textColor="#fff"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameimage"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:paddingVertical="4dp"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imperfil"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="145dp"
+            android:background="@drawable/la0"
+            app:riv_oval="true">
+
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+        <TextView
+            android:id="@+id/addImage"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="195dp"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_51sdp"
+            >
+
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:paddingVertical="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        >
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:gravity="center"
+            android:background="@color/transparente"
+            android:hint="Nombre Completo"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:gravity="center"
+            android:id="@+id/correo"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/transparente"
+            android:hint="Sexo"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="25sp"
+            />
+
+
+        <EditText
+            android:id="@+id/sexo"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:gravity="center"
+            android:background="@color/transparente"
+            android:hint="Alergias"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:gravity="center"
+            android:background="@color/transparente"
+            android:hint="Edad"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/background_light"
+            android:textSize="25sp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/registrar"
+                android:layout_marginHorizontal="2dp"
+                android:layout_width="210dp"
+                android:layout_height="67dp"
+                android:background="@drawable/btn_fondo_color"
+                android:backgroundTint="#142378"
+                android:text="Registrame"
+                android:textColor="@color/md_white_1000"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                />
+            <ProgressBar
+                android:id="@+id/progresbar"
+                android:layout_height="67dp"
+                android:layout_width="210dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+        <Button
+            android:layout_marginHorizontal="2dp"
+            android:id="@+id/volver"
+            android:layout_width="195dp"
+            android:layout_height="67dp"
+            android:background="@drawable/btn_fondo_color"
+            android:backgroundTint="#142378"
+            android:text="Ahora no"
+            android:textColor="@color/md_white_1000"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            />
+    </LinearLayout>
+</LinearLayout>

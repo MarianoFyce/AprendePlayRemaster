@@ -25,7 +25,6 @@
                 android:id="@+id/btnNotificacion"
                 android:layout_width="50sp"
                 android:layout_height="50dp"
-                android:onClick="Onclick"
                 app:srcCompat="@drawable/copa2" />
         </LinearLayout>
 

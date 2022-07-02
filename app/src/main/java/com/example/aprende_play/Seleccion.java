@@ -24,9 +24,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Seleccion extends BaseActivity implements ConversionListener {
-    private  ActivitySeleccionBinding binding;
+    private ActivitySeleccionBinding binding;
     private PreferenceManager preferenceManager;
-    private List<ChatMensaje> conversations;
     private RecentConversationAdapter recentConversationAdapter;
     private FirebaseFirestore database;
 
@@ -64,7 +63,7 @@ public class Seleccion extends BaseActivity implements ConversionListener {
 
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
-                database.collection(DatosTutores.KEY_COLLECTION_NINOSS).document(
+                database.collection(DatosTutores.KEY_COLLECTION_NINOS2).document(
                         preferenceManager.getString(DatosTutores.KEY_USER_ID)
                 );
         documentReference.update(DatosTutores.KEY_FCM_TOKEN,token)
@@ -92,7 +91,7 @@ public class Seleccion extends BaseActivity implements ConversionListener {
 
     @Override
     public void onConversionClicked(Userr userr) {
-        Intent intent = new Intent(getApplicationContext(),Verninos.class);
+        Intent intent = new Intent(getApplicationContext(),Verninoss.class);
         intent.putExtra(DatosTutores.KEY_USER_ID,userr);
         startActivity(intent);
     }
