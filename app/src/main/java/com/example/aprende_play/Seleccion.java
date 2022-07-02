@@ -17,7 +17,7 @@ import com.example.aprende_play.databinding.ActivitySeleccionBinding;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.messaging.FirebaseMessaging;
-//funcionaapp
+//funcionaappgff
 public class Seleccion extends BaseActivity implements ConversionListener {
     private ActivitySeleccionBinding binding;
     private PreferenceManager preferenceManager;
