@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.aprende_play.R;
-import com.example.aprende_play.Seleccion;
 
 public class A_9_Valid extends AppCompatActivity {
 
@@ -25,8 +24,5 @@ public class A_9_Valid extends AppCompatActivity {
         finish();
     }
 
-    public void next(View view) {
-        Intent ob = new Intent(A_9_Valid.this, Seleccion.class);
-        startActivity(ob);
+//Hace falta codigo aqui
     }
-}

@@ -29,6 +29,7 @@
     <string name="motivo">Motivo de la visita</string>
     <string name="horas">Selecciona la hora</string>
     <string name="costo">costo: $800</string>
+    <string name="informa_play">Informa Play</string>
 
     <string-array name="horas">
         <item>Seleccione la hora:</item>
