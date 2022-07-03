@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.aprende_play.R;
-import com.example.aprende_play.Seleccion;
 
 public class Notificaciones extends AppCompatActivity  {
 

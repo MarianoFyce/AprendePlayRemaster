@@ -24,6 +24,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".Inicio"
+            android:exported="false" />
+        <activity
             android:name=".Verprogreso"
             android:exported="false" />
         <activity
@@ -258,9 +261,6 @@
             android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true" />
-        <activity
-            android:name=".Seleccion"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
