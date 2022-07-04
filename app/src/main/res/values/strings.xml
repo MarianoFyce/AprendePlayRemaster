@@ -31,6 +31,12 @@
     <string name="costo">costo: $800</string>
     <string name="informa_play">Informa Play</string>
 
+
+    <string name="contenido">1. Introducción
+Estos Términos y condiciones regulan el acceso y uso del sitio web www.edp.com, bajo la responsabilidad de EDP S.A., con sede en la Avenida 24 de julio, 12, en Lisboa (en lo sucesivo, «EDP S.A.»). Cualquier cuestión legal relacionada con el sitio web se podrá consultar en las secciones Política de privacidad y Política de cookies, que forman parte integral de estos Términos y condiciones.
+
+El uso de este sitio web por parte de cualquier usuario se regirá por los siguientes Términos y condiciones, y su uso implica una aceptación de los mismos por el usuario. Si el usuario rechaza estos Términos y condiciones, debe cesar el uso del mismo.</string>
+
     <string-array name="horas">
         <item>Seleccione la hora:</item>
         <item>9:10 am</item>

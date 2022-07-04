@@ -6,9 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.aprende_play.abel.Res1;
-import com.example.aprende_play.abel.Resp;
-import com.example.aprende_play.clases.Auxiliar;
+import com.example.aprende_play.abel.Covid;
 import com.example.aprende_play.clases.Content;
 
 public class info_covid extends AppCompatActivity {
@@ -34,7 +32,7 @@ public class info_covid extends AppCompatActivity {
                     break;
 
             }
-            i = new Intent(this, Resp.class);
+            i = new Intent(this, Covid.class);
             if (i != null) {
                 i.putExtras(info);
                 startActivity(i);

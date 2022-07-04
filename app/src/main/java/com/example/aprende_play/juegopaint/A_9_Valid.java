@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.aprende_play.Inicio;
 import com.example.aprende_play.R;
 
 public class A_9_Valid extends AppCompatActivity {
@@ -15,14 +16,19 @@ public class A_9_Valid extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a9_valid);
     }
+
     public void va2(View view) {
         Intent ob = new Intent(A_9_Valid.this, A_9_Teach.class);
         startActivity(ob);
     }
 
-    public void va(View view) {
-        finish();
-    }
+    public void va(View view){
 
-//Hace falta codigo aqui
+    finish();
+
+}
+    public void next(View view) {
+        Intent ob = new Intent(A_9_Valid.this, Inicio.class);
+        startActivity(ob);
+    }
     }

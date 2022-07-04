@@ -16,7 +16,7 @@ import com.example.aprende_play.chat.adapter.ChatAdapter;
 import com.example.aprende_play.chat.adapter.Userr;
 import com.example.aprende_play.chat.adapter.UsersActivity;
 import com.example.aprende_play.chat.models.ChatMensaje;
-import com.example.aprende_play.databinding.ActivityChat2Binding;
+import com.example.aprende_play.databinding.ActivityChatBinding;
 import com.example.aprende_play.network.ApiClient;
 import com.example.aprende_play.network.ApiService;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -43,7 +43,7 @@ import retrofit2.Response;
 
 public class ChatActivity extends BaseActivity{
 
-    private ActivityChat2Binding binding;
+    private ActivityChatBinding binding;
     private Userr receiverUser;
     private List<ChatMensaje> chatMensajes;
     private ChatAdapter chatAdapter;
@@ -55,7 +55,7 @@ public class ChatActivity extends BaseActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityChat2Binding.inflate(getLayoutInflater());
+        binding =ActivityChatBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setListeners();
          loadReceivedDeatil();

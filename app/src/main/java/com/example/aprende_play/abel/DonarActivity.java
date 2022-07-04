@@ -29,11 +29,7 @@ public class DonarActivity extends AppCompatActivity {
     }
 
 
-    public void Onclick(View view) {
-        switch (view.getId()){
 
-        }
-    }
 
 
 }

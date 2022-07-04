@@ -5,7 +5,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".abel.Pantalla_Opciones"
+    tools:context=".abel.Inicio_padre"
     android:background="@drawable/gut"
     android:orientation="vertical">
 

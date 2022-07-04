@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.aprende_play.abel.Pantalla_Opciones;
+import com.example.aprende_play.abel.Inicio_padre;
 import com.example.aprende_play.chat.PreferenceManager;
 import com.example.aprende_play.chat.especialistas.Logespecial;
 import com.example.aprende_play.databinding.ActivityLoginBinding;
@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
                         preferenceManager.putString(DatosTutores.KEY_IMAGE, documentSnapshot.getString(DatosTutores.KEY_IMAGE));
                         preferenceManager.putString(DatosTutores.KEY_NAME, documentSnapshot.getString(DatosTutores.KEY_NAME));
 
-                        Intent intent = new Intent(getApplicationContext(), Pantalla_Opciones.class);
+                        Intent intent = new Intent(getApplicationContext(), Inicio_padre.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(intent);
                     }else {

@@ -24,6 +24,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".abel.Terminos_condiciones"
+            android:exported="false" />
+        <activity
             android:name=".Inicio"
             android:exported="false" />
         <activity
@@ -199,14 +202,14 @@
             android:name=".juegopaint.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".Premios"
+            android:name=".Premio_lava_manos"
             android:exported="true"
             android:screenOrientation="landscape" />
         <activity
             android:name=".Instrucciones"
             android:exported="true" />
         <activity
-            android:name=".Reintento"
+            android:name=".Error_lava_manos"
             android:exported="true"
             android:screenOrientation="landscape" />
         <activity
@@ -221,7 +224,7 @@
             android:exported="true"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".abel.Resp"
+            android:name=".abel.Covid"
             android:exported="true" />
         <activity
             android:name=".info_covid"
@@ -233,13 +236,7 @@
             android:name=".abel.Avances"
             android:exported="true" />
         <activity
-            android:name=".Giff"
-            android:exported="true" />
-        <activity
-            android:name=".abel.Res1"
-            android:exported="true" />
-        <activity
-            android:name=".abel.Notificaciones"
+            android:name=".abel.Resp_info"
             android:exported="true" />
         <activity
             android:name=".abel.DonarActivity"
@@ -248,13 +245,10 @@
             android:name=".abel.Generador_citas.Nueva_cita"
             android:exported="true" />
         <activity
-            android:name=".abel.Chat_Activity"
-            android:exported="true" />
-        <activity
             android:name=".abel.Preguntas"
             android:exported="true" />
         <activity
-            android:name=".abel.Pantalla_Opciones"
+            android:name=".abel.Inicio_padre"
             android:exported="true" />
         <activity
             android:name=".juegos.Juego"
@@ -263,7 +257,7 @@
             android:name=".Login"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

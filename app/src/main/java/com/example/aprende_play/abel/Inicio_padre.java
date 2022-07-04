@@ -16,14 +16,14 @@ import com.example.aprende_play.chat.PreferenceManager;
 import com.example.aprende_play.chat.adapter.RecentConversationAdapter;
 import com.example.aprende_play.chat.adapter.Userr;
 import com.example.aprende_play.chat.listeners.ConversionListener;
-import com.example.aprende_play.databinding.ActivityPantallaOpcionesBinding;
+import com.example.aprende_play.databinding.ActivityInicioPadreBinding;
 import com.example.aprende_play.info_covid;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.messaging.FirebaseMessaging;
 
-public class Pantalla_Opciones extends BaseActivity implements ConversionListener {
-    private ActivityPantallaOpcionesBinding binding;
+public class Inicio_padre extends BaseActivity implements ConversionListener {
+    private ActivityInicioPadreBinding binding;
     private PreferenceManager preferenceManager;
     private RecentConversationAdapter recentConversationAdapter;
     private FirebaseFirestore database;
@@ -32,7 +32,7 @@ public class Pantalla_Opciones extends BaseActivity implements ConversionListene
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        binding = ActivityPantallaOpcionesBinding.inflate(getLayoutInflater());
+        binding =  ActivityInicioPadreBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
         preferenceManager = new PreferenceManager(getApplicationContext());
@@ -70,7 +70,7 @@ public class Pantalla_Opciones extends BaseActivity implements ConversionListene
                 );
         documentReference.update(DatosTutores.KEY_FCM_TOKEN,token)
                 //.addOnSuccessListener(unused -> showToast("Token actualizado"))
-                .addOnFailureListener(e -> showToast("No disponible actualización"));
+                .addOnFailureListener(e -> showToast(""));
 
     }
     @Override

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondoj"
-    tools:context=".Reintento">
+    tools:context=".Error_lava_manos">
 
     <ImageView
         android:id="@+id/imageView2"

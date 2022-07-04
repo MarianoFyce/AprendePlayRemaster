@@ -1,19 +1,19 @@
 package com.example.aprende_play.abel;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.text.LineBreaker;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.aprende_play.R;
+import com.example.aprende_play.chat.ActivityVista;
 import com.example.aprende_play.clases.Auxiliar;
 
-public class Res1 extends AppCompatActivity {
+public class Resp_info extends AppCompatActivity {
 
     String retornar() {
         Bundle Obj = getIntent().getExtras();
@@ -24,20 +24,17 @@ public class Res1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_res1);
+        setContentView(R.layout.activity_resp_info);
 
         TextView Txt = findViewById(R.id.TxtPregunta);
         Txt.setText(retornar());
-//        Txt.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+
     }
 
-        public void Onclick(View view) {
-            switch (view.getId()){
-                case R.id.imgdudas:
-                    startActivity(new Intent(this,Chat_Activity.class));
-                    break;
-
-            }
+    public void pasa_chat(View view) {
+        Intent c = new Intent(this, ActivityVista.class);
+        startActivity(c);
+        finish();
+    }
     }
 
-}

@@ -58,7 +58,7 @@ public class Video2 extends AppCompatActivity {
 
 
     public void premio(View view) {
-        Intent pAS = new Intent(Video2.this,Premios.class);
+        Intent pAS = new Intent(Video2.this, Premio_lava_manos.class);
         startActivity(pAS);
 
         //agregala info a BD

@@ -35,7 +35,7 @@ public class Preguntas extends AppCompatActivity {
                         break;
 
                 }
-                intent = new Intent(this, Res1.class);
+                intent = new Intent(this, Resp_info.class);
                 if (intent != null) {
                     intent.putExtras(PasarDatos);
                     startActivity(intent);

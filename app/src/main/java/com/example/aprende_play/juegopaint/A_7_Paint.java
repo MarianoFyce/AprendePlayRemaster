@@ -128,7 +128,7 @@ public class A_7_Paint extends AppCompatActivity {
         color.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final ColorPicker colorPicker = new ColorPicker(MainActivity.this);
+                final ColorPicker colorPicker = new ColorPicker(Splash_screen.this);
                 colorPicker.setOnFastChooseColorListener(new ColorPicker.OnFastChooseColorListener() {
                     @Override
                     public void setOnFastChooseColorListener(int position, int color) {

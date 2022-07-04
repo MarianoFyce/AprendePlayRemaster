@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo3"
     android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-    tools:context=".MainActivity">
+    tools:context=".Splash_screen">
 
 <pl.droidsonroids.gif.GifImageView
 android:layout_width="321dp"

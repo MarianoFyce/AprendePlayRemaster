@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -48,7 +47,7 @@ private VideoView zt1;
     }
 
     public void e(View view) {
-        Intent e= new Intent(video.this, Reintento.class);
+        Intent e= new Intent(video.this, Error_lava_manos.class);
         startActivity(e);
     }
 }
