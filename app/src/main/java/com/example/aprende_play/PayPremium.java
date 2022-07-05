@@ -22,7 +22,7 @@ import java.math.BigDecimal;
 
 public class PayPremium extends Activity {
 
-    //DIS
+    //DIS ALV3
     public static final String TAG = "Payment exmaple";
     public static final String PAYPAL_KEY = "AesEiVBEJvXAbQqVP96sTO9onJJ5qSF5m_tcbmDFVIS6tGb3tBQZqK72P6h5y_wuPKMGuDNuaGHGJEb2";
     private static final int REQUEST_CODE_PAYMENT = 1;
