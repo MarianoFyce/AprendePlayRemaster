@@ -14,7 +14,7 @@ import com.example.aprende_play.chat.adapter.Userr;
 import com.example.aprende_play.chat.adapter.UsersActivity;
 import com.example.aprende_play.chat.listeners.ConversionListener;
 import com.example.aprende_play.chat.models.ChatMensaje;
-import com.example.aprende_play.databinding.ActivityVistaBinding;
+import com.example.aprende_play.databinding.ActivityPerfilPadreBinding;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -24,7 +24,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class ActivityVista extends BaseActivity implements ConversionListener {
-    private ActivityVistaBinding binding;
+    private ActivityPerfilPadreBinding binding;
     private PreferenceManager preferenceManager;
     private List<ChatMensaje> conversations;
     private RecentConversationAdapter recentConversationAdapter;
@@ -33,7 +33,7 @@ public class ActivityVista extends BaseActivity implements ConversionListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityVistaBinding.inflate(getLayoutInflater());
+        binding = ActivityPerfilPadreBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
         preferenceManager = new PreferenceManager(getApplicationContext());

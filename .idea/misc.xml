@@ -229,16 +229,19 @@
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_notificaciones.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_nueva_cita2.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_pantalla_opciones.xml" value="0.16614583333333333" />
+        <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_perfil_padre.xml" value="0.128" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_premios.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_reintento.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_res1.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_resp.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_resp_info.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_seleccion.xml" value="0.1" />
-        <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_terminos_condiciones.xml" value="0.1" />
+        <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_terminos_condiciones.xml" value="0.144" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_users.xml" value="0.1" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_validar8.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_vista.xml" value="0.1" />
+        <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_vista_clientes.xml" value="0.1" />
+        <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/activity_vista_espe.xml" value="0.1" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/content_main.xml" value="0.264" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="..\:/Users/msafu/OneDrive/Documentos/GitHub/AprendePlayRemaster/app/src/main/res/layout/message_item.xml" value="0.12771739130434784" />
@@ -254,7 +257,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.176" />
+        <option name="scale" value="0.128" />
       </ProjectState>
     </option>
   </component>
