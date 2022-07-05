@@ -8,7 +8,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.aprende_play.juegopaint.InicioJuego;
-import com.example.aprende_play.pays.CheckoutActivity;
 
 public class Juegos extends AppCompatActivity {
 
@@ -39,8 +38,8 @@ public class Juegos extends AppCompatActivity {
             case R.id.btnBloquead:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle("Quieres acceder a mas contenido?");
-                builder.setMessage("Actualice al plan premium");
-                builder.setPositiveButton("Aceptar", null);
+                builder.setMessage("Plan premium");
+                //builder.setPositiveButton("Aceptar", null);
 
                 AlertDialog dialog = builder.create();
                 dialog.show();
@@ -51,12 +50,12 @@ public class Juegos extends AppCompatActivity {
             case R.id.dod:
                 AlertDialog.Builder b = new AlertDialog.Builder(this);
                 b.setTitle("Quieres acceder a mas contenido?");
-                b.setMessage("Actualice al plan premium");
-                b.setPositiveButton("Aceptar", null);
+                b.setMessage("Plan premium");
+                //b.setPositiveButton("Aceptar", null);
 
                 AlertDialog d = b.create();
                 d.show();
-                Intent pasacompA = new Intent(Juegos.this, CheckoutActivity.class);
+                Intent pasacompA = new Intent(Juegos.this, PayPremium.class);
                 startActivity(pasacompA);
                 break;
 

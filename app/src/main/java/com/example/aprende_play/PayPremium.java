@@ -66,8 +66,8 @@ order = (Button)findViewById(R.id.order);
                 PayPalService.class);
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
 
-        getThingToBuy= new PayPalPayment(new BigDecimal(String.valueOf("11")), "MXN",
-                "premium", PayPalPayment.PAYMENT_INTENT_SALE);
+        getThingToBuy= new PayPalPayment(new BigDecimal(String.valueOf("99")), "MXN",
+                "Plan premium", PayPalPayment.PAYMENT_INTENT_SALE);
         Intent payment = new Intent(PayPremium.this, PaymentActivity.class);
         payment.putExtra(PaymentActivity.EXTRA_PAYMENT, getThingToBuy);
         payment.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);

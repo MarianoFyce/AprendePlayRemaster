@@ -1,10 +1,11 @@
 package com.example.aprende_play.juegopaint;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.aprende_play.R;
 
 public class A_3_Valid extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class A_3_Valid extends AppCompatActivity {
         setContentView(R.layout.activity_a3_valid);
     }
     public void va2(View view) {
-        Intent ob = new Intent(A_3_Valid.this, A_3_Teach.class);
+        Intent ob = new Intent(A_3_Valid.this,RegistroProgreso.class);
         startActivity(ob);
     }
 

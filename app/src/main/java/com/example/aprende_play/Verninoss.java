@@ -47,7 +47,7 @@ public class Verninoss extends BaseActivity implements Userlisteners {
                             Userr userr1 = new Userr();
                             userr1.name= queryDocumentSnapshot.getString(DatosTutores.KEY_NAME);
                             //cambie
-                            userr1.descrip= queryDocumentSnapshot.getString(DatosTutores.KEY_SEXO);
+                            userr1.descrip= queryDocumentSnapshot.getString(DatosTutores.KEY_EDAD);
                             userr1.image= queryDocumentSnapshot.getString(DatosTutores.KEY_IMAGE);
 
                             userr1.token= queryDocumentSnapshot.getString(DatosTutores.KEY_FCM_TOKEN);

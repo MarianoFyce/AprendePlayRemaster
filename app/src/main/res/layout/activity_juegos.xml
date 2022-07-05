@@ -38,11 +38,11 @@
                 android:onClick="jeugo3"/>
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/dia"
                 android:layout_width="200sp"
                 android:layout_height="200sp"
-                android:onClick="memo"
-                app:srcCompat="@drawable/memorama" />
+                android:onClick="onclick"
+                app:srcCompat="@drawable/histori" />
 
 
 
@@ -89,11 +89,11 @@
 
 
             <ImageView
-                android:id="@+id/dia"
+                android:id="@+id/imageView9"
                 android:layout_width="200sp"
                 android:layout_height="match_parent"
-                android:onClick="onclick"
-                app:srcCompat="@drawable/histori" />
+                android:onClick="memo"
+                app:srcCompat="@drawable/memorama" />
 
 
             <ImageView

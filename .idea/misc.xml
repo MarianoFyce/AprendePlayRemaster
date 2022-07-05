@@ -70,11 +70,11 @@
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_chat.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_chat2.xml" value="0.1" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_chat_espe.xml" value="0.25" />
-        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_checkout.xml" value="0.1" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_checkout.xml" value="0.264" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_end_mem.xml" value="0.264" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_fin_juego.xml" value="0.1" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_inicio.xml" value="0.25" />
-        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_inicio_juego.xml" value="0.264" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_inicio_juego.xml" value="0.176" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_instrucciones.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_juego2.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_juegos.xml" value="0.19882246376811594" />
@@ -84,10 +84,12 @@
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_new_boy.xml" value="0.264" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_nueva_cita2.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_pago_gog.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_pantalla_opciones.xml" value="0.264" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_pay_premium.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_paypal.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_preguntas.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_pruenbapago.xml" value="0.11197916666666667" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_registra_especialista.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_registrarninos.xml" value="0.25" />
@@ -97,6 +99,7 @@
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_reintento.xml" value="0.1" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_res1.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_resp.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_resp_info.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_seleccion.xml" value="0.264" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_select_boy.xml" value="0.2" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_teachgame.xml" value="0.264" />
@@ -107,6 +110,7 @@
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_verninos.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_verninoss.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_verprogreso.xml" value="0.25" />
+        <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_video.xml" value="0.15489130434782608" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_video2.xml" value="0.25" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_vista.xml" value="0.264" />
         <entry key="..\:/Users/MARIA/AndroidStudioProjects/Aprende_Play-master/Aprende_Play-master/app/src/main/res/layout/activity_vista_clientes.xml" value="0.25" />

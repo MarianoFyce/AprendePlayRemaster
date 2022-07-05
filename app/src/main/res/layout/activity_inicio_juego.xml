@@ -53,9 +53,9 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="404dp"
+        android:layout_width="375dp"
         android:layout_height="140dp"
-        android:background="@drawable/jugarn2"
+        android:background="@drawable/jugarr"
         android:onClick="vamos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

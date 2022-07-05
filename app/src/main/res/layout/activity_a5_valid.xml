@@ -19,23 +19,7 @@
         app:layout_constraintVertical_bias="0.202"
         app:srcCompat="@drawable/fondore" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="269dp"
-        android:layout_height="59dp"
-        android:background="@drawable/btn_fondo_color"
-        android:backgroundTint="@color/md_yellow_A700"
-        android:elevation="5dp"
-        android:foreground="?selectableItemBackground"
-        android:onClick="va"
-        android:text="Revisar"
-        android:textColor="#fff"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -59,15 +43,36 @@
         android:elevation="5dp"
         android:foreground="?selectableItemBackground"
         android:onClick="va2"
-        android:text="Volver a intentar"
+        android:text="Registra el Progreso"
         android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintVertical_bias="0.973" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="269dp"
+        android:layout_height="59dp"
+        android:background="@drawable/btn_fondo_color"
+        android:backgroundTint="@color/md_yellow_A700"
+        android:elevation="5dp"
+        android:foreground="?selectableItemBackground"
+        android:onClick="va"
+        android:text="Revisar"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
